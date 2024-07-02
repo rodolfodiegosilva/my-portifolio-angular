@@ -10,28 +10,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { EducationModalComponent } from './education-modal/education-modal.component';
 import { TechnologyModalComponent } from './technology-modal/technology-modal.component';
+import { Education, Technology, Course } from '../models/education.model';
 
 declare var bootstrap: any;
-
-interface Education {
-  degree: string;
-  institution: string;
-  year: string;
-  description?: string;
-}
-
-interface Course {
-  name: string;
-  provider: string;
-  issued: string;
-  credentialUrl?: string;
-  skills: string[];
-}
-
-interface Technology {
-  name: string;
-  courses: Course[];
-}
 
 @Component({
   selector: 'app-education',

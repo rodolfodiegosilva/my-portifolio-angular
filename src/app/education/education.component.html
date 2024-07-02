@@ -1,42 +1,47 @@
 <div class="education-section full-width">
-  <div class="education-content">
-    <h3>{{ "education.title" | translate }}</h3>
-    <div class="education-list">
-      <mat-card
-        *ngFor="let edu of education"
-        class="education-item"
-        (click)="openEducationModal(edu)"
-      >
-        <mat-card-header>
-          <mat-card-title>{{ edu.degree }}</mat-card-title>
-          <mat-card-subtitle>
-            {{ edu.institution }}
-          </mat-card-subtitle>
-          <mat-card-subtitle>{{ edu.year }}</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-actions>
-          <button mat-button>
-            {{ "education.view_details" | translate }}
-          </button>
-        </mat-card-actions>
-      </mat-card>
+  <div class="education-content-container">
+    <div class="education-content">
+      <h3>{{ "education.title" | translate }}</h3>
+      <div class="education-list">
+        <mat-card
+          *ngFor="let edu of education"
+          class="education-item"
+          (click)="openEducationModal(edu)"
+        >
+          <mat-card-header>
+            <mat-card-title>{{ edu.degree }}</mat-card-title>
+            <mat-card-subtitle>
+              {{ edu.institution }}
+            </mat-card-subtitle>
+            <mat-card-subtitle>{{ edu.year }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions>
+            <button mat-button>
+              {{ "education.view_details" | translate }}
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
-    <h3>{{ "education.certifications.title" | translate }}</h3>
-    <div class="technology-list">
-      <mat-card
-        *ngFor="let tech of technologies"
-        class="technology-item"
-        (click)="openTechnologyModal(tech)"
-      >
-        <mat-card-header>
-          <mat-card-title>{{ tech.name }}</mat-card-title>
-        </mat-card-header>
-        <mat-card-actions>
-          <button mat-button>
-            {{ "education.view_details" | translate }}
-          </button>
-        </mat-card-actions>
-      </mat-card>
+    <div class="separator"></div>
+    <div class="certifications-content">
+      <h3>{{ "education.certifications.title" | translate }}</h3>
+      <div class="technology-list">
+        <mat-card
+          *ngFor="let tech of technologies"
+          class="technology-item"
+          (click)="openTechnologyModal(tech)"
+        >
+          <mat-card-header>
+            <mat-card-title>{{ tech.name }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-actions>
+            <button mat-button>
+              {{ "education.view_details" | translate }}
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
 </div>

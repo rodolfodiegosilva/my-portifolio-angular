@@ -12,11 +12,11 @@
     "name": "Rodolfo Silva",
     "img_profile": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/profile.jpeg",
     "profession": "Software Engineer, Full-stack Developer & Systems Analyst",
-    "description": "I am driven by my passion for creating attractive and functional designs, developing solutions that are elegantly simple"
+    "description": "I am driven by my passion for creating attractive and functional designs, developing elegantly simple solutions."
   },
   "profile": {
     "about_title": "Hi, I'm Rodolfo Silva. Thank you for visiting my site.",
-    "about_description": "Experienced Web Developer adept in all stages of web development. Knowledgeable in user interface, testing, and maintenance of web systems. Equipped with a diverse and promising skill set. Proficient in a variety of technologies including Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB, and MySQL. Capable of effectively self-managing during independent projects, as well as collaborating in a team."
+    "about_description": "Experienced Web Developer adept in all stages of web development. Knowledgeable in user interface, testing, and maintenance of web systems. Equipped with a diverse and promising skill set. Proficient in various technologies, including Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB, and MySQL. Capable of effectively self-managing during independent projects and collaborating in a team."
   },
   "skills": {
     "title": "Skills",
@@ -132,184 +132,61 @@
         "degree": "Bachelor in Computer Engineering",
         "institution": "FUCAPI Institute of Higher Education",
         "year": "2012 - 2019",
-        "description": "The course trained me to operate in a growing local technology market that demands integrated knowledge of electronic and computer engineering. It aimed to equip me with skills to specify, design, develop, maintain, and manage computer systems (hardware and software) applied to the local context."
+        "description": "The course trained me to operate in a growing local technology market that demands integrated electronic and computer engineering knowledge. It aimed to equip me with skills to specify, design, develop, maintain, and manage computer systems (hardware and software) applied to the local context."
       }
     ],
     "certifications": {
       "title": "Licenses & Certifications",
       "technologies": [
         {
-          "name": "Kubernetes",
+          "name": "DevOps",
           "courses": [
             {
               "name": "Learning Kubernetes",
               "provider": "LinkedIn",
               "issued": "Sep 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/4cf70b86f6de757f1a1d9541155b6c84dd611b393bd839ad8c3cbe751bc31b9b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["Kubernetes"]
-            }
-          ]
-        },
-        {
-          "name": "CSS",
-          "courses": [
-            {
-              "name": "CSS Essential Training (2019)",
-              "provider": "LinkedIn",
-              "issued": "Aug 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
-              "skills": ["CSS"]
-            }
-          ]
-        },
-        {
-          "name": "DevOps",
-          "courses": [
+            },
             {
               "name": "DevOps Foundations: Continuous Delivery/Continuous Integration",
               "provider": "LinkedIn",
               "issued": "Aug 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/0d93dcfb1c9c7fdc5ae385807e1da6ab48248d164a09ccc5200bfbb70203eca3",
               "skills": ["CI/CD", "DevOps"]
             },
             {
               "name": "DevOps Foundations",
               "provider": "LinkedIn",
               "issued": "Jul 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/0e6729cd854e30bce078ae423eb38fcc982988635b9353a299c88ce59c6e4aba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["DevOps"]
-            }
-          ]
-        },
-        {
-          "name": "Elastic Stack",
-          "courses": [
+            },
             {
               "name": "Learning the Elastic Stack",
               "provider": "LinkedIn",
               "issued": "Aug 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/1400d358e45d4b8f85d2cbc9e06eeb46b1cb56f437317d66e450e56767157237?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["Elastic Stack"]
             }
           ]
         },
         {
-          "name": "Angular",
+          "name": "Git",
           "courses": [
-            {
-              "name": "Modern Web Course Complete with JavaScript",
-              "provider": "Udemy Brasil",
-              "issued": "Dec 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "NodeJS and MongoDB Developer Course",
-              "provider": "Udemy Brasil",
-              "issued": "Dec 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "WEB Development Course with ES6, TypeScript and Angular",
-              "provider": "Udemy Brasil",
-              "issued": "Dec 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "Angular Web Development",
-              "provider": "Udemy Brasil",
-              "issued": "Jan 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            }
-          ]
-        },
-        {
-          "name": "PostgreSQL",
-          "courses": [
-            {
-              "name": "SQL training with PostgreSQL",
-              "provider": "Alura",
-              "issued": "Oct 2021",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["PostgreSQL"]
-            }
-          ]
-        },
-        {
-          "name": "Java",
-          "courses": [
-            {
-              "name": "Introduction to the Spring Boot Framework",
-              "provider": "DIO",
-              "issued": "Sep 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Spring Boot"]
-            },
-            {
-              "name": "Java- Working with Collections",
-              "provider": "DIO",
-              "issued": "Sep 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Working with Bank Data using JDBC and JPA",
-              "provider": "DIO",
-              "issued": "Sep 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["JDBC", "JPA"]
-            },
-            {
-              "name": "Advanced Java Development",
-              "provider": "DIO",
-              "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Basic Java Development",
-              "provider": "DIO",
-              "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
             {
               "name": "Introduction to Git and GitHub",
               "provider": "DIO",
               "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
+              "credentialUrl": "https://certificates.digitalinnovation.one/DBA27BFC",
               "skills": ["Git", "GitHub"]
             },
             {
-              "name": "Introduction to object orientation with java",
+              "name": "Working with Branches on GitHub",
               "provider": "DIO",
               "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Java data structure",
-              "provider": "DIO",
-              "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Mastering Java IDEs",
-              "provider": "DIO",
-              "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Working with Branches on Github",
-              "provider": "DIO",
-              "issued": "Aug 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["GitHub"]
+              "credentialUrl": "https://certificates.digitalinnovation.one/DC36EAFA",
+              "skills": ["Git", "GitHub"]
             }
           ]
         },
@@ -317,61 +194,159 @@
           "name": "Web Development",
           "courses": [
             {
+              "name": "CSS Essential Training (2019)",
+              "provider": "LinkedIn",
+              "issued": "Aug 2023",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/4b7259953b0360b82e0898306f4f437e09deec092c53df8e111465ac013e5c24?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
+              "skills": ["CSS"]
+            },
+            {
+              "name": "Manage React Applications with TypeScript Track",
+              "provider": "Alura",
+              "issued": "Jun 2023",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/2fe4e2e8-b9cd-47af-bd8e-8e24cf5bac3a",
+              "skills": ["React.js", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "React with TypeScript Track",
+              "provider": "Alura",
+              "issued": "Jun 2023",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/4a9f23d1-f97d-4a60-9ed0-0db85aa6ea91",
+              "skills": ["React.js", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "Modern Web Course Complete with JavaScript",
+              "provider": "Udemy Brasil",
+              "issued": "Dec 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-b77cb74b-c3a0-44fe-8274-c0f9c7ad764c/",
+              "skills": ["Angular", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "WEB Development Course with ES6, TypeScript and Angular",
+              "provider": "Udemy Brasil",
+              "issued": "Dec 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-d533bf3b-1953-46e8-afa1-0c4d1e3feab2/",
+              "skills": ["Angular", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "Angular Web Development",
+              "provider": "Udemy Brasil",
+              "issued": "Jan 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-46f066f5-e824-42d0-9263-6f45931ac54d/",
+              "skills": ["Angular", "TypeScript", "JavaScript"]
+            },
+            {
               "name": "Complete Web Development Course",
               "provider": "Udemy Brasil",
               "issued": "May 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Web Development"]
+              "credentialUrl": "https://www.udemy.com/certificate/UC-1ecef29d-a8bf-4a64-a306-e3c47f66e83a/",
+              "skills": ["Web Development", "JavaScript"]
             }
           ]
         },
         {
-          "name": "Machine Learning",
+          "name": "Data Base",
           "courses": [
+            {
+              "name": "SQL training with PostgreSQL",
+              "provider": "Alura",
+              "issued": "Oct 2021",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/420766e0-f98d-4d3e-930b-88f16a207310",
+              "skills": ["PostgreSQL","SQL"]
+            },
+            {
+              "name": "NodeJS and MongoDB Developer Course",
+              "provider": "Udemy Brasil",
+              "issued": "Dec 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
+              "skills": ["MongoDB"]
+            }
+          ]
+        },
+        {
+          "name": "BackEnd Development",
+          "courses": [
+            {
+              "name": "NodeJS and MongoDB Developer Course",
+              "provider": "Udemy Brasil",
+              "issued": "Dec 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
+              "skills": ["NodeJS", "JavaScript"]
+            },
             {
               "name": "Machine Learning and Data Science with Python",
               "provider": "Udemy Brasil",
               "issued": "May 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Machine Learning", "Data Science"]
+              "credentialUrl": "https://www.udemy.com/certificate/UC-062f5e7b-eb40-48d4-8925-196f0a48b1dd/",
+              "skills": ["Machine Learning", "Data Science", "Python"]
+            },
+            {
+              "name": "Introduction to the Spring Boot Framework",
+              "provider": "DIO",
+              "issued": "Sep 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/2CDDA3DB",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Java- Working with Collections",
+              "provider": "DIO",
+              "issued": "Sep 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/4F09FF14",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Working with Bank Data using JDBC and JPA",
+              "provider": "DIO",
+              "issued": "Sep 2021",
+              "credentialUrl": "https://hermes.digitalinnovation.one/certificates/7D64FA95.pdf",
+              "skills": ["Spring Boot","JDBC", "JPA", "Java"]
+            },
+            {
+              "name": "Advanced Java Development",
+              "provider": "DIO",
+              "issued": "Aug 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/66C89D72",
+              "skills": ["Spring Boot","Java"]
+            },
+            {
+              "name": "Basic Java Development",
+              "provider": "DIO",
+              "issued": "Aug 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/1B94BCFB",
+              "skills": ["Spring Boot","Java"]
+            },
+            {
+              "name": "Introduction to object orientation with Java",
+              "provider": "DIO",
+              "issued": "Aug 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/DA8461D8",
+              "skills": ["Spring Boot","Java"]
+            },
+            {
+              "name": "Java data structure",
+              "provider": "DIO",
+              "issued": "Aug 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/97C65DC7",
+              "skills": ["Spring Boot","Java"]
+            },
+            {
+              "name": "Mastering Java IDEs",
+              "provider": "DIO",
+              "issued": "Aug 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/4604AD62",
+              "skills": ["Spring Boot","Java"]
             }
           ]
         },
         {
-          "name": "Scrum",
+          "name": "Agile methodology",
           "courses": [
             {
               "name": "Scrum Foundations Professional Certificate SFPC",
               "provider": "CertiProf",
               "issued": "May 2021",
-              "credentialUrl": "https://www.certiprof.com/",
+              "credentialUrl": "https://www.certiprof.com/63379388C",
               "skills": ["Scrum"]
-            }
-          ]
-        },
-        {
-          "name": "React",
-          "courses": [
-            {
-              "name": "Formação Gerencie aplicações React com Typescript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["React.js"]
-            },
-            {
-              "name": "Formação React com TypeScript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["React.js"]
-            },
-            {
-              "name": "Track React com TypeScript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["TypeScript", "React.js"]
             }
           ]
         }
@@ -385,7 +360,7 @@
         "image": "assets/projects/project1/project_1.png",
         "name": "Project One",
         "description": "This is a description for project one.",
-        "technologies": ["angular", "nodejs", "postgresql", "react"],
+        "technologies": ["angular", "Nodejs", "PostgreSQL", "React"],
         "frontend": "http://github.com/user/project-one-frontend",
         "backend": "http://github.com/user/project-one-backend",
         "link": "http://example.com/project-one",
@@ -440,7 +415,8 @@
     ]
   },
   "github_dashboard": {
-    "title": "GitHub Repositories",
+    "title": "GitHub Dashboard",
+    "github_repo": "Repositories",
     "stars": "Stars",
     "forks": "Forks",
     "open_issues": "Open Issues",
@@ -449,7 +425,7 @@
   },
   "footer": {
     "about": "About",
-    "about_description": "Diego Seven Sistemas specializes in software, web, and mobile development, delivering innovative solutions for your business needs.",
+    "about_description": "Diego Seven Sistemas specializes in software, web, and mobile development and delivers innovative solutions for business needs.",
     "location": "Location",
     "location_description": "Manaus, Amazonas, Brazil",
     "links": "Links",
@@ -469,6 +445,8 @@
     "view_details": "View Details",
     "close": "Close",
     "stacks": "stacks",
+    "download_cv": "Download CV",
+    "cv_link": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/CV/Rodolfo_Silva_CV.pdf",
     "experiences": [
       {
         "position": "Full Stack Developer",
@@ -478,16 +456,16 @@
           "Design and develop applications using Agile Scrum methodology, using Atlassian tools like Jira and Confluence, dividing the project into multiple sprints.",
           "Use Bitbucket for version control collaborating with other developers using pull requests.",
           "Bamboo and Nexus are used for continuous integration of builds.",
-          "Design and develop web applications using HTML, CSS, SASS, JavaScript, Angular and NodeJS.",
-          "Responsible for the style, appearance and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
+          "Design and develop web applications using HTML, CSS, SASS, JavaScript, Angular, and NodeJS.",
+          "Responsible for the style, appearance, and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
           "Use custom Angular directives and develop reusable components and templates that could be reused in various locations of the application.",
           "Develop reusable Typescript components and services to consume REST APIs using component-based architecture provided by Angular.",
           "Develop new endpoints in SpringBoot that provided JSON data to the Angular web application.",
           "Implement HTTP requests using the Observable RxJS library to handle multiple types of values.",
           "Experienced working with advanced JavaScript like ECMAScript 6 (ES6).",
-          "Develop unit tests for all classes created using Jest Framework, JUnit and Mockito in TDD environment.",
-          "Develop APIs to interact with the database using Spring Boot. Worked extensively with Spring JDBC, Spring Hibernate ORM and JPA.",
-          "Use Swagger to document all service APIs, documenting request body, header and response details."
+          "Develop unit tests for all classes created using Jest Framework, JUnit, and Mockito in TDD environment.",
+          "Develop APIs to interact with the database using Spring Boot. Worked extensively with Spring JDBC, Spring Hibernate ORM, and JPA.",
+          "Use Swagger to document all service APIs, documenting request body, header, and response details."
         ],
         "stacks": "Angular, JavaScript, Typescript, npm, NodeJs, Spring Boot, JUnit, Mockito, Java, MySQL, MongoDB, Linux, Docker, Bamboo, Nexus, Bitbucket and Git Bash"
       },
@@ -499,17 +477,17 @@
           "Design and develop applications using Agile Scrum methodology, using Atlassian tools like Jira and Confluence, dividing the project into multiple sprints.",
           "Use Git for version control collaborating with other developers using pull requests.",
           "Jenkins and JFrog were used for continuous integration of builds.",
-          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, React, Angular and NodeJS.",
-          "Responsible for the style, appearance and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
+          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, React, Angular, and NodeJS.",
+          "Responsible for the style, appearance, and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
           "Use custom Angular and React directives and develop reusable components and templates that could be reused in various locations of the application.",
           "Develop reusable Typescript components and services to consume REST APIs using component-based architecture provided by Angular and React.",
           "Develop new endpoints in SpringBoot that provided JSON data to the Angular and React web applications.",
           "Implement HTTP requests using the Observable RxJS library to handle multiple types of values.",
           "Experienced working with advanced JavaScript like ECMAScript 6 (ES6).",
-          "Develop unit tests for all classes created using Jest Framework, JUnit and Mockito in TDD environment.",
-          "Develop APIs to interact with the database using Spring Boot. Worked extensively with Spring JDBC, Spring Hibernate ORM and JPA.",
+          "Develop unit tests for all classes created using Jest Framework, JUnit, and Mockito in TDD environment.",
+          "Develop APIs to interact with the database using Spring Boot. Worked extensively with Spring JDBC, Spring Hibernate ORM, and JPA.",
           "Develop job projects in Spring Batch that consumed external APIs interacting and receiving data from RabbitMQ.",
-          "Use Swagger to document all service APIs, documenting request body, header and response details."
+          "Use Swagger to document all service APIs, documenting request body, header, and response details."
         ],
         "stacks": "Angular, React, JavaScript, Typescript, npm, NodeJs, Spring Boot, Spring Batch, RabbitMQ, JUnit, Mockito, Java, MySQL, MongoDB, Linux, Docker, Jenkins, JFrog, GitHub and Git Bash"
       },
@@ -519,15 +497,15 @@
         "period": "Aug 2021 — Nov 2021",
         "responsibilities": [
           "Design and develop applications using Agile Scrum methodology, using Atlassian tools like Jira and Confluence, dividing the project into multiple sprints.",
-          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, React, Angular and NodeJS.",
+          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, React, Angular, and NodeJS.",
           "Involved in using GIT for version management and workflows associated with branching and merging.",
-          "Responsible for the style, appearance and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
+          "Responsible for the style, appearance, and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
           "Use various custom Angular and React directives and develop reusable components and templates that could be reused in various locations of the application.",
           "Create reusable Typescript components and services to consume REST APIs using component-based architecture provided by Angular and React.",
           "Develop new web service endpoints that provide JSON data to the Angular web application.",
           "Implement HTTP requests using the Observable RxJS library to handle multiple types of values.",
           "Experienced working with advanced JavaScript like ECMAScript 6 (ES6).",
-          "Performed unit tests after writing the code using Jest Framework and involved in TDD environment."
+          "Performed unit tests after writing the code using Jest Framework and was involved in the TDD environment."
         ],
         "stacks": "Angular, JavaScript, Typescript, Laravel, PHP, Composer, PostgreSQL, GitHub and Git Bash"
       },
@@ -536,9 +514,9 @@
         "company": "Silva Ramos Sistemas",
         "period": "Dec 2020 — Nov 2021",
         "responsibilities": [
-          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, Angular and NodeJS.",
+          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, Angular, and NodeJS.",
           "Involved in using GIT for version management and workflows associated with branching and merging.",
-          "Responsible for the style, appearance and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
+          "Responsible for the style, appearance, and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
           "Use various custom Angular directives and develop reusable components and templates that could be reused in various locations of the application.",
           "Create reusable Typescript components and services to consume REST APIs using component-based architecture provided by Angular.",
           "Develop new web service endpoints that provide JSON data to the Angular web application.",
@@ -552,9 +530,9 @@
         "company": "Instituto Xavier Serviços em T.I.",
         "period": "Jun 2020 — Dec 2020",
         "responsibilities": [
-          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, Angular and NodeJS.",
+          "Design and develop web applications using HTML, CSS, SASS, Bootstrap, JavaScript, Angular, and NodeJS.",
           "Involved in using GIT for version management and workflows associated with branching and merging.",
-          "Responsible for the style, appearance and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
+          "Responsible for the style, appearance, and behavior of the web page with SASS that extends CSS with dynamic behavior such as variables, mixins, operations, and functions.",
           "Use various custom Angular directives and develop reusable components and templates that could be reused in various locations of the application.",
           "Create reusable Typescript components and services to consume REST APIs using component-based architecture provided by Angular.",
           "Develop new web service endpoints that provide JSON data to the Angular web application.",

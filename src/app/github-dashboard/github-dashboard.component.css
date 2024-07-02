@@ -1,7 +1,14 @@
-.container {
-  padding: 20px;
-  max-width: 95% !important;
+.github-dashboard-section {
+  max-width: 95%;
+  margin: 0 auto;
 }
+.github-dashboard-content h2 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
 .card {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -32,4 +39,15 @@
 }
 .mt-3 {
   margin-top: 0.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .github-dashboard-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .github-dashboard-section h3 {
+    font-size: 1.2em;
+  }
 }

@@ -3,19 +3,20 @@
     "personal_data": "Dados Pessoais",
     "profile": "Perfil",
     "skills": "Habilidades",
-    "education": "Formação Acadêmica",
+    "education": "Educação",
     "projects": "Projetos",
-    "github_dashboard": "GitHub Dashboard",
+    "github_dashboard": "Painel do GitHub",
     "professional_experiences": "Experiências Profissionais"
   },
   "personal_data": {
     "name": "Rodolfo Silva",
-    "img_profile":"https://my-portifolio-images.s3.us-east-2.amazonaws.com/profile.jpeg",
-    "profession": "Engenheiro de Software, Desenvolvedor Full-stack & Analista de Sistema",
-    "description": "Sou movido pela minha paixão por criar designs atraentes e funcionais, desenvolvendo soluções que são elegantemente simples."  },
+    "img_profile": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/profile.jpeg",
+    "profession": "Engenheiro de Software, Desenvolvedor Full-stack e Analista de Sistemas",
+    "description": "Sou movido pela minha paixão por criar designs atraentes e funcionais, desenvolvendo soluções elegantemente simples."
+  },
   "profile": {
-    "about_title": "Oi, eu sou Rodolfo Silva. Obrigado por visitar meu site.",
-    "about_description": "Desenvolvedor Web experiente, proficiente em todas as fases do desenvolvimento web. Com sólida experiência em interface do usuário, testes e manutenção de sistemas web, possuo um conjunto diversificado de habilidades e conhecimento em várias tecnologias, incluindo Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB e MySQL. Autogerencio projetos de forma eficaz e colaboro bem em equipe."
+    "about_title": "Olá, eu sou Rodolfo Silva. Obrigado por visitar meu site.",
+    "about_description": "Desenvolvedor Web experiente em todas as etapas do desenvolvimento web. Conhecimento em interface de usuário, testes e manutenção de sistemas web. Equipado com um conjunto diversificado e promissor de habilidades. Proficiência em várias tecnologias, incluindo Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB e MySQL. Capaz de gerenciar efetivamente projetos independentes e colaborar em equipe."
   },
   "skills": {
     "title": "Habilidades",
@@ -23,97 +24,97 @@
       {
         "name": "JavaScript",
         "description": "Habilidade em JavaScript para desenvolvimento frontend e backend.",
-        "level": "Advanced"
+        "level": "Avançado"
       },
       {
         "name": "Angular",
-        "description": "Desenvolveu múltiplas aplicações usando o framework Angular.",
-        "level": "Advanced"
+        "description": "Desenvolvimento de várias aplicações utilizando o framework Angular.",
+        "level": "Avançado"
       },
       {
         "name": "TypeScript",
-        "description": "Experiência em usar TypeScript para aplicações de grande escala.",
-        "level": "Intermediate"
+        "description": "Experiência no uso de TypeScript para aplicações de grande escala.",
+        "level": "Intermediário"
       },
       {
         "name": "HTML & CSS",
-        "description": "Proficiente em HTML e CSS para desenvolvimento web.",
-        "level": "Advanced"
+        "description": "Proficiência em HTML e CSS para desenvolvimento web.",
+        "level": "Avançado"
       },
       {
         "name": "Python",
         "description": "Experiência em Python para scripting e desenvolvimento web.",
-        "level": "Intermediate"
+        "level": "Intermediário"
       },
       {
         "name": "React",
-        "description": "Experiência em construir interfaces complexas usando React.",
-        "level": "Intermediate"
+        "description": "Experiência em construção de interfaces complexas usando React.",
+        "level": "Intermediário"
       },
       {
         "name": "NodeJS",
-        "description": "Desenvolveu serviços backend usando NodeJS.",
-        "level": "Intermediate"
+        "description": "Desenvolvimento de serviços backend usando NodeJS.",
+        "level": "Intermediário"
       },
       {
         "name": "Cypress",
-        "description": "Habilidade em usar Cypress para testes end-to-end.",
-        "level": "Intermediate"
+        "description": "Habilidade no uso de Cypress para testes de ponta a ponta.",
+        "level": "Intermediário"
       },
       {
         "name": "SpringBoot",
-        "description": "Desenvolveu APIs REST usando SpringBoot.",
-        "level": "Intermediate"
+        "description": "Desenvolvimento de APIs REST usando SpringBoot.",
+        "level": "Intermediário"
       },
       {
         "name": "Java",
-        "description": "Proficiente em Java para desenvolvimento backend.",
-        "level": "Advanced"
+        "description": "Proficiência em Java para desenvolvimento backend.",
+        "level": "Avançado"
       },
       {
         "name": "Laravel",
-        "description": "Experiência em construir aplicações web usando Laravel.",
-        "level": "Intermediate"
+        "description": "Experiência em construção de aplicações web usando Laravel.",
+        "level": "Intermediário"
       },
       {
         "name": "PHP",
-        "description": "Desenvolveu lógica de servidor usando PHP.",
-        "level": "Intermediate"
+        "description": "Desenvolvimento de lógica do lado do servidor usando PHP.",
+        "level": "Intermediário"
       },
       {
         "name": "MySQL",
-        "description": "Gerenciou bancos de dados usando MySQL.",
-        "level": "Intermediate"
+        "description": "Gerenciamento de bancos de dados usando MySQL.",
+        "level": "Intermediário"
       },
       {
         "name": "PostgreSQL",
         "description": "Habilidade em PostgreSQL para gerenciamento de banco de dados.",
-        "level": "Intermediate"
+        "level": "Intermediário"
       },
       {
         "name": "SQL",
-        "description": "Proficiente em escrever queries SQL.",
-        "level": "Advanced"
+        "description": "Proficiência em escrever consultas SQL.",
+        "level": "Avançado"
       },
       {
         "name": "MongoDB",
         "description": "Experiência com MongoDB para gerenciamento de banco de dados NoSQL.",
-        "level": "Intermediate"
+        "level": "Intermediário"
       },
       {
         "name": "Linux",
-        "description": "Confortável em usar Linux para desenvolvimento e implantação.",
-        "level": "Intermediate"
+        "description": "Confortável no uso de Linux para desenvolvimento e implantação.",
+        "level": "Intermediário"
       },
       {
         "name": "Docker",
-        "description": "Habilidade em usar Docker para containerização.",
-        "level": "Intermediate"
+        "description": "Habilidade no uso de Docker para containerização.",
+        "level": "Intermediário"
       },
       {
         "name": "Git",
         "description": "Experiência em controle de versão usando Git.",
-        "level": "Advanced"
+        "level": "Avançado"
       }
     ],
     "levels": {
@@ -124,192 +125,68 @@
   },
   "education": {
     "title": "Educação",
-    "view_details": "Ver detalhes",
+    "view_details": "Ver Detalhes",
     "close": "Fechar",
-    "stacks": "stacks",
     "degrees": [
       {
-        "degree": "Bacharel em Engenharia de Computação",
+        "degree": "Bacharelado em Engenharia da Computação",
         "institution": "Instituto de Ensino Superior FUCAPI",
         "year": "2012 - 2019",
-        "description": "O curso me formou para atuar em um mercado tecnológico local em crescimento, que demanda conhecimentos integrados de engenharia eletrônica e de computação. Visou me capacitar com habilidades para especificar, projetar, desenvolver, manter e gerir sistemas de computação (hardware e software) aplicados ao contexto local."
+        "description": "O curso me treinou para atuar em um mercado local de tecnologia em crescimento que demanda conhecimentos integrados em engenharia eletrônica e de computação. Visava me equipar com habilidades para especificar, projetar, desenvolver, manter e gerenciar sistemas de computador (hardware e software) aplicados ao contexto local."
       }
     ],
     "certifications": {
       "title": "Licenças e Certificações",
       "technologies": [
         {
-          "name": "Kubernetes",
+          "name": "DevOps",
           "courses": [
             {
               "name": "Aprendendo Kubernetes",
               "provider": "LinkedIn",
               "issued": "Set 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/4cf70b86f6de757f1a1d9541155b6c84dd611b393bd839ad8c3cbe751bc31b9b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["Kubernetes"]
-            }
-          ]
-        },
-        {
-          "name": "CSS",
-          "courses": [
-            {
-              "name": "Treinamento Essencial de CSS (2019)",
-              "provider": "LinkedIn",
-              "issued": "Ago 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
-              "skills": ["CSS"]
-            }
-          ]
-        },
-        {
-          "name": "DevOps",
-          "courses": [
+            },
             {
               "name": "Fundamentos de DevOps: Entrega Contínua/Integração Contínua",
               "provider": "LinkedIn",
               "issued": "Ago 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/0d93dcfb1c9c7fdc5ae385807e1da6ab48248d164a09ccc5200bfbb70203eca3",
               "skills": ["CI/CD", "DevOps"]
             },
             {
               "name": "Fundamentos de DevOps",
               "provider": "LinkedIn",
               "issued": "Jul 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/0e6729cd854e30bce078ae423eb38fcc982988635b9353a299c88ce59c6e4aba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["DevOps"]
-            }
-          ]
-        },
-        {
-          "name": "Elastic Stack",
-          "courses": [
+            },
             {
-              "name": "Aprendendo Elastic Stack",
+              "name": "Aprendendo o Elastic Stack",
               "provider": "LinkedIn",
               "issued": "Ago 2023",
-              "credentialUrl": "https://www.linkedin.com/learning/",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/1400d358e45d4b8f85d2cbc9e06eeb46b1cb56f437317d66e450e56767157237?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
               "skills": ["Elastic Stack"]
             }
           ]
         },
         {
-          "name": "Angular",
+          "name": "Git",
           "courses": [
-            {
-              "name": "Curso Completo de Desenvolvimento Web com JavaScript",
-              "provider": "Udemy Brasil",
-              "issued": "Dez 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "Curso de Desenvolvimento com NodeJS e MongoDB",
-              "provider": "Udemy Brasil",
-              "issued": "Dez 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "Curso de Desenvolvimento Web com ES6, TypeScript e Angular",
-              "provider": "Udemy Brasil",
-              "issued": "Dez 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            },
-            {
-              "name": "Desenvolvimento Web com Angular",
-              "provider": "Udemy Brasil",
-              "issued": "Jan 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Angular"]
-            }
-          ]
-        },
-        {
-          "name": "PostgreSQL",
-          "courses": [
-            {
-              "name": "Treinamento SQL com PostgreSQL",
-              "provider": "Alura",
-              "issued": "Out 2021",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["PostgreSQL"]
-            }
-          ]
-        },
-        {
-          "name": "Java",
-          "courses": [
-            {
-              "name": "Introdução ao Framework Spring Boot",
-              "provider": "DIO",
-              "issued": "Set 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Spring Boot"]
-            },
-            {
-              "name": "Java- Trabalhando com Coleções",
-              "provider": "DIO",
-              "issued": "Set 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Trabalhando com Dados Bancários usando JDBC e JPA",
-              "provider": "DIO",
-              "issued": "Set 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["JDBC", "JPA"]
-            },
-            {
-              "name": "Desenvolvimento Avançado de Java",
-              "provider": "DIO",
-              "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Desenvolvimento Básico de Java",
-              "provider": "DIO",
-              "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
             {
               "name": "Introdução ao Git e GitHub",
               "provider": "DIO",
               "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
+              "credentialUrl": "https://certificates.digitalinnovation.one/DBA27BFC",
               "skills": ["Git", "GitHub"]
             },
             {
-              "name": "Introdução à orientação a objetos com Java",
+              "name": "Trabalhando com Branches no GitHub",
               "provider": "DIO",
               "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Estrutura de Dados Java",
-              "provider": "DIO",
-              "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Dominando IDEs Java",
-              "provider": "DIO",
-              "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["Java"]
-            },
-            {
-              "name": "Trabalhando com Branches no Github",
-              "provider": "DIO",
-              "issued": "Ago 2021",
-              "credentialUrl": "https://www.dio.me/",
-              "skills": ["GitHub"]
+              "credentialUrl": "https://certificates.digitalinnovation.one/DC36EAFA",
+              "skills": ["Git", "GitHub"]
             }
           ]
         },
@@ -317,61 +194,159 @@
           "name": "Desenvolvimento Web",
           "courses": [
             {
+              "name": "Treinamento Essencial em CSS (2019)",
+              "provider": "LinkedIn",
+              "issued": "Ago 2023",
+              "credentialUrl": "https://www.linkedin.com/learning/certificates/4b7259953b0360b82e0898306f4f437e09deec092c53df8e111465ac013e5c24?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
+              "skills": ["CSS"]
+            },
+            {
+              "name": "Gerencia aplicações React com TypeScript",
+              "provider": "Alura",
+              "issued": "Jun 2023",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/2fe4e2e8-b9cd-47af-bd8e-8e24cf5bac3a",
+              "skills": ["React.js", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "React com TypeScript",
+              "provider": "Alura",
+              "issued": "Jun 2023",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/4a9f23d1-f97d-4a60-9ed0-0db85aa6ea91",
+              "skills": ["React.js", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "Curso Completo de Web Moderno com JavaScript",
+              "provider": "Udemy Brasil",
+              "issued": "Dez 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-b77cb74b-c3a0-44fe-8274-c0f9c7ad764c/",
+              "skills": ["Angular"]
+            },
+            {
+              "name": "Curso de Desenvolvimento WEB com ES6, TypeScript e Angular",
+              "provider": "Udemy Brasil",
+              "issued": "Dez 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-d533bf3b-1953-46e8-afa1-0c4d1e3feab2/",
+              "skills": ["Angular", "TypeScript", "JavaScript"]
+            },
+            {
+              "name": "Desenvolvimento Web com Angular",
+              "provider": "Udemy Brasil",
+              "issued": "Jan 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-46f066f5-e824-42d0-9263-6f45931ac54d/",
+              "skills": ["Angular", "TypeScript", "JavaScript"]
+            },
+            {
               "name": "Curso Completo de Desenvolvimento Web",
               "provider": "Udemy Brasil",
               "issued": "Mai 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Desenvolvimento Web"]
+              "credentialUrl": "https://www.udemy.com/certificate/UC-1ecef29d-a8bf-4a64-a306-e3c47f66e83a/",
+              "skills": ["Desenvolvimento Web", "TypeScript", "JavaScript"]
             }
           ]
         },
         {
-          "name": "Machine Learning",
+          "name": "Banco de Dados",
           "courses": [
             {
-              "name": "Machine Learning e Data Science com Python",
+              "name": "Treinamento em SQL com PostgreSQL",
+              "provider": "Alura",
+              "issued": "Out 2021",
+              "credentialUrl": "https://cursos.alura.com.br/degree/certificate/420766e0-f98d-4d3e-930b-88f16a207310",
+              "skills": ["PostgreSQL", "SQL"]
+            },
+            {
+              "name": "Curso de Desenvolvedor NodeJS e MongoDB",
+              "provider": "Udemy Brasil",
+              "issued": "Dez 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
+              "skills": ["MongoDB"]
+            }
+          ]
+        },
+        {
+          "name": "Desenvolvimento Back-End",
+          "courses": [
+            {
+              "name": "Curso de Desenvolvedor NodeJS e MongoDB",
+              "provider": "Udemy Brasil",
+              "issued": "Dez 2021",
+              "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
+              "skills": ["NodeJS", "JavaScript"]
+            },
+            {
+              "name": "Machine Learning e Ciência de Dados com Python",
               "provider": "Udemy Brasil",
               "issued": "Mai 2021",
-              "credentialUrl": "https://www.udemy.com/",
-              "skills": ["Machine Learning", "Data Science"]
+              "credentialUrl": "https://www.udemy.com/certificate/UC-062f5e7b-eb40-48d4-8925-196f0a48b1dd/",
+              "skills": ["Machine Learning", "Ciência de Dados", "Python"]
+            },
+            {
+              "name": "Introdução ao Framework Spring Boot",
+              "provider": "DIO",
+              "issued": "Set 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/2CDDA3DB",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Java - Trabalhando com Coleções",
+              "provider": "DIO",
+              "issued": "Set 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/4F09FF14",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Trabalhando com Dados Bancários usando JDBC e JPA",
+              "provider": "DIO",
+              "issued": "Set 2021",
+              "credentialUrl": "https://hermes.digitalinnovation.one/certificates/7D64FA95.pdf",
+              "skills": ["Spring Boot", "JDBC", "JPA", "Java"]
+            },
+            {
+              "name": "Desenvolvimento Java Avançado",
+              "provider": "DIO",
+              "issued": "Ago 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/66C89D72",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Desenvolvimento Java Básico",
+              "provider": "DIO",
+              "issued": "Ago 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/1B94BCFB",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Introdução à Orientação a Objetos com Java",
+              "provider": "DIO",
+              "issued": "Ago 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/DA8461D8",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Estrutura de Dados em Java",
+              "provider": "DIO",
+              "issued": "Ago 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/97C65DC7",
+              "skills": ["Spring Boot", "Java"]
+            },
+            {
+              "name": "Dominando IDEs Java",
+              "provider": "DIO",
+              "issued": "Ago 2021",
+              "credentialUrl": "https://certificates.digitalinnovation.one/4604AD62",
+              "skills": ["Spring Boot", "Java"]
             }
           ]
         },
         {
-          "name": "Scrum",
+          "name": "Metodologia Ágil",
           "courses": [
             {
-              "name": "Certificação Profissional de Fundamentos de Scrum SFPC",
+              "name": "Certificado Profissional de Fundamentos do Scrum SFPC",
               "provider": "CertiProf",
               "issued": "Mai 2021",
-              "credentialUrl": "https://www.certiprof.com/",
+              "credentialUrl": "https://www.certiprof.com/63379388C",
               "skills": ["Scrum"]
-            }
-          ]
-        },
-        {
-          "name": "React",
-          "courses": [
-            {
-              "name": "Formação Gerencie Aplicações React com Typescript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["React.js"]
-            },
-            {
-              "name": "Formação React com TypeScript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["React.js"]
-            },
-            {
-              "name": "Trilha React com TypeScript",
-              "provider": "Alura",
-              "issued": "Jun 2023",
-              "credentialUrl": "https://www.alura.com.br/",
-              "skills": ["TypeScript", "React.js"]
             }
           ]
         }
@@ -383,9 +358,9 @@
     "list": [
       {
         "image": "assets/projects/project1/project_1.png",
-        "name": "Projeto 1",
-        "description": "Essa é uma descrição do Projeto 1",
-        "technologies": "Angular, Bootstrap, TypeScript",
+        "name": "Projeto Um",
+        "description": "Esta é uma descrição do projeto um.",
+        "technologies": ["angular", "Nodejs", "PostgreSQL", "React"],
         "frontend": "http://github.com/user/project-one-frontend",
         "backend": "http://github.com/user/project-one-backend",
         "link": "http://example.com/project-one",
@@ -397,9 +372,9 @@
       },
       {
         "image": "assets/projects/project2/project_2.png",
-        "name": "Projeto 2",
-        "description": "Essa é uma descrição do Projeto 2",
-        "technologies": "Angular, Bootstrap, TypeScript",
+        "name": "Projeto Dois",
+        "description": "Esta é uma descrição do projeto dois.",
+        "technologies": ["Angular", "Bootstrap", "TypeScript"],
         "frontend": "http://github.com/user/project-one-frontend",
         "backend": "http://github.com/user/project-one-backend",
         "link": "http://example.com/project-one",
@@ -411,9 +386,9 @@
       },
       {
         "image": "assets/projects/project1/project_1.png",
-        "name": "Projeto 3",
-        "description": "Essa é uma descrição do Projeto 1",
-        "technologies": "Angular, Bootstrap, TypeScript",
+        "name": "Projeto Três",
+        "description": "Esta é uma descrição do projeto três.",
+        "technologies": ["Angular", "Bootstrap", "TypeScript"],
         "frontend": "http://github.com/user/project-one-frontend",
         "backend": "http://github.com/user/project-one-backend",
         "link": "http://example.com/project-one",
@@ -425,9 +400,9 @@
       },
       {
         "image": "assets/projects/project2/project_2.png",
-        "name": "Projeto 4",
-        "description": "Essa é uma descrição do Projeto 2",
-        "technologies": "Angular, Bootstrap, TypeScript",
+        "name": "Projeto Quatro",
+        "description": "Esta é uma descrição do projeto quatro.",
+        "technologies": ["Angular", "Bootstrap", "TypeScript"],
         "frontend": "http://github.com/user/project-one-frontend",
         "backend": "http://github.com/user/project-one-backend",
         "link": "http://example.com/project-one",
@@ -440,16 +415,17 @@
     ]
   },
   "github_dashboard": {
-    "title": "Repositórios do GitHub",
+    "title": "Painel do GitHub",
+    "github_repo": "Repositórios",
     "stars": "Estrelas",
     "forks": "Forks",
-    "open_issues": "Problemas Abertos",
+    "open_issues": "Issues Abertos",
     "contributions": "Contribuições",
-    "activity_overview": "Visão Geral das Atividades"
+    "activity_overview": "Visão Geral da Atividade"
   },
   "footer": {
     "about": "Sobre",
-    "about_description": "Diego Seven Sistemas é especializada em desenvolvimento de software, web e mobile, entregando soluções inovadoras para as necessidades do seu negócio.",
+    "about_description": "Diego Seven Sistemas é especializada em desenvolvimento de software, web e mobile, e entrega soluções inovadoras para as necessidades do negócio.",
     "location": "Localização",
     "location_description": "Manaus, Amazonas, Brasil",
     "links": "Links",
@@ -458,7 +434,7 @@
     "contact": "Contato",
     "social": "Social",
     "rights": "Todos os direitos reservados.",
-    "contact_email": "exemplo@exemplo.com",
+    "contact_email": "example@example.com",
     "github_link": "https://github.com/rodolfodiegosilva",
     "linkedin_link": "https://www.linkedin.com/in/eng-rodolfo-diego/",
     "twitter_link": "https://x.com/DiegoSeven_mcfc",
@@ -467,7 +443,8 @@
   "professionalExperiences": {
     "title": "Experiências Profissionais",
     "view_details": "Ver Detalhes",
-    "close": "Fechar",
+    "download_cv": "Baixar CV",
+    "cv_link": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/CV/Rodolfo_Silva_CV.pdf",
     "experiences": [
       {
         "position": "Desenvolvedor Full Stack",
@@ -478,7 +455,7 @@
           "Uso Bitbucket para controle de versão colaborando com outros desenvolvedores usando pull requests.",
           "Bamboo e Nexus são usados para integração contínua de builds.",
           "Projeto e desenvolvo aplicações web usando HTML, CSS, SASS, JavaScript, Angular e NodeJS.",
-          "Responsável pelo estilo, aparência e comportamento da página web com SASS que estende CSS com comportamento dinâmico como variáveis, mixagem, operações e funções.",
+          "Responsável pelo estilo, aparência e comportamento da página web com SASS que estende CSS com comportamento dinâmico como variáveis, mixins, operações e funções.",
           "Uso diretivas personalizadas Angular e desenvolvo componentes e modelos reutilizáveis que puderam ser reutilizados em vários locais do aplicativo.",
           "Desenvolvo componentes e serviços Typescript reutilizáveis para consumir APIs REST usando arquitetura baseada em componentes fornecida por Angular.",
           "Desenvolvo novos endpoints em SpringBoot que forneceram dados JSON para o aplicativo web Angular.",
@@ -513,7 +490,7 @@
         "stacks": "Angular, React, JavaScript, Typescript, npm, NodeJs, Spring Boot, Spring Batch, RabbitMQ, JUnit, Mockito, Java, MySQL, MongoDB, Linux, Docker, Jenkins, JFrog, GitHub e Git Bash"
       },
       {
-        "position": "Desenvolvedor Full Stack Junior",
+        "position": "Desenvolvedor Full Stack Júnior",
         "company": "Groupe MM - Mercadomóveis",
         "period": "Ago 2021 — Nov 2021",
         "responsibilities": [
@@ -531,7 +508,7 @@
         "stacks": "Angular, JavaScript, Typescript, Laravel, PHP, Composer, PostgreSQL, GitHub e Git Bash"
       },
       {
-        "position": "Desenvolvedor Full Stack Junior",
+        "position": "Desenvolvedor Full Stack Júnior",
         "company": "Silva Ramos Sistemas",
         "period": "Dez 2020 — Nov 2021",
         "responsibilities": [
@@ -547,7 +524,7 @@
         "stacks": "Angular, JavaScript, Typescript, Laravel, PHP, Composer, MySQL, Bitbucket e Git Bash"
       },
       {
-        "position": "Desenvolvedor Full Stack Junior",
+        "position": "Desenvolvedor Full Stack Júnior",
         "company": "Instituto Xavier Serviços em T.I.",
         "period": "Jun 2020 — Dez 2020",
         "responsibilities": [
