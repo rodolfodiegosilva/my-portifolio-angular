@@ -83,4 +83,10 @@ export class ProfessionalExperiencesComponent implements OnInit {
     }
     this.cdr.detectChanges();
   }
+
+  downloadCV() {
+    this.translate.get('professionalExperiences.cv_link').subscribe((cvLink: string) => {
+      window.open(cvLink, '_blank');
+    });
+  }
 }

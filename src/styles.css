@@ -36,7 +36,6 @@
   text-decoration: none;
   opacity: 0.75;
 }
-
 @media (max-width: 768px) {
   .modal-title {
     font-size: 1.2em;

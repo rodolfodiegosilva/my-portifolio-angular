@@ -1,48 +1,61 @@
-<div class="container mt-4">
-  <h2>{{ "github_dashboard.title" | translate }}</h2>
-  <div class="row row-cols-1 row-cols-md-5 g-4">
-    <div class="col" *ngFor="let repo of repositories">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
-          </h5>
-          <p class="card-text">{{ repo.description }}</p>
-          <div class="d-flex justify-content-between mt-3">
-            <span><i class="fas fa-star"></i> {{ repo.stars }} {{ "github_dashboard.stars" | translate }}</span>
-            <span><i class="fas fa-code-branch"></i> {{ repo.forks }} {{ "github_dashboard.forks" | translate }}</span>
-            <span><i class="fas fa-exclamation-circle"></i> {{ repo.openIssues }} {{ "github_dashboard.open_issues" | translate }}</span>
+<div class="github-dashboard-section full-width">
+  <div class="github-dashboard-content">
+    <h2>{{ "github_dashboard.title" | translate }}</h2>
+    <h3>{{ "github_dashboard.github_repo" | translate }}</h3>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col" *ngFor="let repo of repositories">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+            </h5>
+            <p class="card-text">{{ repo.description }}</p>
+            <div class="d-flex justify-content-between mt-3">
+              <span
+                ><i class="fas fa-star"></i> {{ repo.stars }}
+                {{ "github_dashboard.stars" | translate }}</span
+              >
+              <span
+                ><i class="fas fa-code-branch"></i> {{ repo.forks }}
+                {{ "github_dashboard.forks" | translate }}</span
+              >
+              <span
+                ><i class="fas fa-exclamation-circle"></i>
+                {{ repo.openIssues }}
+                {{ "github_dashboard.open_issues" | translate }}</span
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Adicionar o iframe para o gráfico de contribuições, visível apenas em telas maiores -->
-  <div class="contributions mt-4 d-none d-md-flex">
-    <div class="col-md-8">
-      <h2>{{ "github_dashboard.contributions" | translate }}</h2>
-      <iframe
-        src="https://ghchart.rshah.org/rodolfodiegosilva"
-        frameborder="0"
-        width="100%"
-        height="200"
-      ></iframe>
-    </div>
-    <div class="col-md-4">
-      <h2>{{ "github_dashboard.activity_overview" | translate }}</h2>
-      <div class="activity-overview">
-        <ul>
-          <li *ngFor="let activity of activities">
-            <span>{{ activity.type }}:</span>
-            <a
-              [href]="'https://github.com/' + activity.repo.name"
-              target="_blank"
-              >{{ activity.repo.name }}</a
-            >
-            <span>at {{ activity.created_at | date : "short" }}</span>
-          </li>
-        </ul>
+    <!-- Adicionar o iframe para o gráfico de contribuições, visível apenas em telas maiores -->
+    <div class="contributions mt-4 d-none d-md-flex">
+      <div class="col-md-8">
+        <h3>{{ "github_dashboard.contributions" | translate }}</h3>
+        <iframe
+          src="https://ghchart.rshah.org/rodolfodiegosilva"
+          frameborder="0"
+          width="100%"
+          height="200"
+        ></iframe>
+      </div>
+      <div class="col-md-4">
+        <h3>{{ "github_dashboard.activity_overview" | translate }}</h3>
+        <div class="activity-overview">
+          <ul>
+            <li *ngFor="let activity of activities">
+              <span>{{ activity.type }}:</span>
+              <a
+                [href]="'https://github.com/' + activity.repo.name"
+                target="_blank"
+                >{{ activity.repo.name }}</a
+              >
+              <span>at {{ activity.created_at | date : "short" }}</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

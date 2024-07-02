@@ -1,5 +1,8 @@
 <div class="professional-experiences-section">
   <h2>{{ "professionalExperiences.title" | translate }}</h2>
+  <button mat-button (click)="downloadCV()">
+    {{ "professionalExperiences.download_cv" | translate }}
+  </button>
   <div class="experience-cards-container">
     <mat-card
       *ngFor="let experience of experiences"
@@ -8,8 +11,8 @@
     >
       <mat-card-header>
         <mat-card-title>{{ experience.position }}</mat-card-title>
-        <mat-card-subtitle>{{ experience.company }} </mat-card-subtitle>
-        <mat-card-subtitle> {{ experience.period }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ experience.company }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ experience.period }}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-actions>
         <button mat-button>
