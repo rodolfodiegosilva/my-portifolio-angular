@@ -10,15 +10,18 @@ import { Activity, Repository } from '../models/github.models';
 export class GithubService {
 
   private readonly GITHUB_API_URL = 'https://api.github.com';
-  private readonly GITHUB_TOKEN = environment.GITHUB_TOKEN;
+  private readonly GITHUB_TOKEN = environment.TOKEN;
 
   constructor(private http: HttpClient) { }
 
   getUserRepos(username: string): Observable<Repository[]> {
+    
     const headers = new HttpHeaders().set(
       'Authorization',
       `token ${this.GITHUB_TOKEN}`
     );
+    
+    console.log("headers-------------->",headers);
     const url = `${this.GITHUB_API_URL}/users/${username}/repos`;
     return this.http.get<Repository[]>(url, { headers });
   }
