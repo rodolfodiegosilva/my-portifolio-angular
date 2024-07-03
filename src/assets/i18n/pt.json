@@ -24,97 +24,97 @@
       {
         "name": "JavaScript",
         "description": "Habilidade em JavaScript para desenvolvimento frontend e backend.",
-        "level": "Avançado"
+        "level": "Advanced"
       },
       {
         "name": "Angular",
         "description": "Desenvolvimento de várias aplicações utilizando o framework Angular.",
-        "level": "Avançado"
+        "level": "Advanced"
       },
       {
         "name": "TypeScript",
         "description": "Experiência no uso de TypeScript para aplicações de grande escala.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "HTML & CSS",
         "description": "Proficiência em HTML e CSS para desenvolvimento web.",
-        "level": "Avançado"
+        "level": "Advanced"
       },
       {
         "name": "Python",
         "description": "Experiência em Python para scripting e desenvolvimento web.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "React",
         "description": "Experiência em construção de interfaces complexas usando React.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "NodeJS",
         "description": "Desenvolvimento de serviços backend usando NodeJS.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "Cypress",
         "description": "Habilidade no uso de Cypress para testes de ponta a ponta.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "SpringBoot",
         "description": "Desenvolvimento de APIs REST usando SpringBoot.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "Java",
         "description": "Proficiência em Java para desenvolvimento backend.",
-        "level": "Avançado"
+        "level": "Advanced"
       },
       {
         "name": "Laravel",
         "description": "Experiência em construção de aplicações web usando Laravel.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "PHP",
         "description": "Desenvolvimento de lógica do lado do servidor usando PHP.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "MySQL",
         "description": "Gerenciamento de bancos de dados usando MySQL.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "PostgreSQL",
         "description": "Habilidade em PostgreSQL para gerenciamento de banco de dados.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "SQL",
         "description": "Proficiência em escrever consultas SQL.",
-        "level": "Avançado"
+        "level": "Advanced"
       },
       {
         "name": "MongoDB",
         "description": "Experiência com MongoDB para gerenciamento de banco de dados NoSQL.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "Linux",
         "description": "Confortável no uso de Linux para desenvolvimento e implantação.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "Docker",
         "description": "Habilidade no uso de Docker para containerização.",
-        "level": "Intermediário"
+        "level": "Intermediate"
       },
       {
         "name": "Git",
         "description": "Experiência em controle de versão usando Git.",
-        "level": "Avançado"
+        "level": "Advanced"
       }
     ],
     "levels": {
