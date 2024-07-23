@@ -5,6 +5,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { selectLanguage } from '../../language.selectors';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
+import { RouterModule } from '@angular/router';
 declare var bootstrap: any;
 
 interface Project {
@@ -16,19 +17,20 @@ interface Project {
   frontend?: string;
   backend?: string;
   images?: string[];
+  project: string;
 }
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule, ProjectModalComponent],
+  imports: [CommonModule, TranslateModule, ProjectModalComponent, RouterModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
   language$: Observable<string>;
   projects: Project[] = [];
-  selectedProject?: any;
+  selectedProject: Project | null = null;
   projectModal: any;
 
   constructor(
@@ -58,6 +60,7 @@ export class ProjectsComponent implements OnInit {
         frontend: project.frontend,
         backend: project.backend,
         images: project.images,
+        project: project.project
       }));
     });
   }
@@ -70,6 +73,7 @@ export class ProjectsComponent implements OnInit {
     );
     this.projectModal.show();
   }
+
   closeModal() {
     this.selectedProject = null;
     if (this.projectModal) {

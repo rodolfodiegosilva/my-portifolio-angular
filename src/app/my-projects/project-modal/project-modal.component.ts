@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 declare var bootstrap: any;
 
@@ -13,6 +14,7 @@ interface Project {
   frontend?: string;
   backend?: string;
   images?: string[];
+  project: string;
 }
 
 @Component({
@@ -23,12 +25,21 @@ interface Project {
   imports: [CommonModule, TranslateModule],
 })
 export class ProjectModalComponent implements OnInit {
-  @Input() project!: Project; // Use o operador de asserção `!`
+  @Input() project: Project | null = null;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     const modalElement = document.getElementById('projectModal');
     if (modalElement) {
       new bootstrap.Modal(modalElement);
+    }
+  }
+
+  redirectToDetails(): void {
+    if (this.project) {
+      this.closeModal();
+      this.router.navigate(['/project', this.project.project]);
     }
   }
 

@@ -19,6 +19,7 @@ export class GithubService {
       'Authorization',
       `token ${this.GITHUB_TOKEN}`
     );
+  
     const url = `${this.GITHUB_API_URL}/users/${username}/repos`;
     return this.http.get<Repository[]>(url, { headers });
   }
