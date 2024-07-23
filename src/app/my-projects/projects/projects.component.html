@@ -1,8 +1,8 @@
 <div class="container">
   <h2>{{ 'projects.title' | translate }}</h2>          
   <div class="row row-cols-1 row-cols-md-4 g-4">
-    <div class="col" *ngFor="let project of projects" (click)="openModal(project)">
-      <div class="card h-100">
+    <div class="col" *ngFor="let project of projects">
+      <div class="card h-100" (click)="openModal(project)" style="cursor: pointer;">
         <img [src]="project.image" class="card-img-top" alt="{{ project.name }}">
         <div class="card-body">
           <h5 class="card-title">{{ project.name }}</h5>
@@ -12,5 +12,5 @@
     </div>
   </div>
 
-  <app-project-modal [project]="selectedProject" (closeModal)="closeModal()"></app-project-modal>
+  <app-project-modal *ngIf="selectedProject" [project]="selectedProject" (closeModal)="closeModal()"></app-project-modal>
 </div>

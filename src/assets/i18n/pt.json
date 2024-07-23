@@ -355,62 +355,48 @@
   },
   "projects": {
     "title": "Meus Projetos",
+    "projectDetails": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "technologies": "Tecnologias",
+      "cicd": "CI/CD",
+      "hosting": "Hospedagem"
+    },
     "list": [
       {
-        "image": "assets/projects/project1/project_1.png",
-        "name": "Projeto Um",
-        "description": "Esta é uma descrição do projeto um.",
-        "technologies": ["angular", "Nodejs", "PostgreSQL", "React"],
-        "frontend": "http://github.com/user/project-one-frontend",
-        "backend": "http://github.com/user/project-one-backend",
-        "link": "http://example.com/project-one",
+        "project": "iot_system_app",
+        "image": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/iot_system_app.png",
+        "name": "IoT System App",
+        "description": "Este é o frontend da API do Sistema IoT, construído com Angular. O frontend permite que os usuários interajam com os dispositivos IoT, os gerenciem e monitorem seus status.",
+        "technologies": ["angular", "angular-material", "primeng", "bootstrap", "typescript", "rxjs", "html5", "css3"],
+        "frontend": "http://github.com/rodolfodiegosilva/iot-system-app",
+        "backend": "http://github.com/rodolfodiegosilva/iot-system-api",
+        "link": "https://iot-system.rodolfo-silva.com",
         "images": [
-          "assets/projects/project1/project_1_1.png",
-          "assets/projects/project1/project_1_2.png",
-          "assets/projects/project1/project_1_3.png"
-        ]
-      },
-      {
-        "image": "assets/projects/project2/project_2.png",
-        "name": "Projeto Dois",
-        "description": "Esta é uma descrição do projeto dois.",
-        "technologies": ["Angular", "Bootstrap", "TypeScript"],
-        "frontend": "http://github.com/user/project-one-frontend",
-        "backend": "http://github.com/user/project-one-backend",
-        "link": "http://example.com/project-one",
-        "images": [
-          "assets/projects/project2/project_2_1.png",
-          "assets/projects/project2/project_2_2.png",
-          "assets/projects/project2/project_2_3.png"
-        ]
-      },
-      {
-        "image": "assets/projects/project1/project_1.png",
-        "name": "Projeto Três",
-        "description": "Esta é uma descrição do projeto três.",
-        "technologies": ["Angular", "Bootstrap", "TypeScript"],
-        "frontend": "http://github.com/user/project-one-frontend",
-        "backend": "http://github.com/user/project-one-backend",
-        "link": "http://example.com/project-one",
-        "images": [
-          "assets/projects/project1/project_1_1.png",
-          "assets/projects/project1/project_1_2.png",
-          "assets/projects/project1/project_1_3.png"
-        ]
-      },
-      {
-        "image": "assets/projects/project2/project_2.png",
-        "name": "Projeto Quatro",
-        "description": "Esta é uma descrição do projeto quatro.",
-        "technologies": ["Angular", "Bootstrap", "TypeScript"],
-        "frontend": "http://github.com/user/project-one-frontend",
-        "backend": "http://github.com/user/project-one-backend",
-        "link": "http://example.com/project-one",
-        "images": [
-          "assets/projects/project2/project_2_1.png",
-          "assets/projects/project2/project_2_2.png",
-          "assets/projects/project2/project_2_3.png"
-        ]
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/device_list_for_new_monitoring_page.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/device_list_page.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/jogin_page.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/monitoring_list_page.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/new_device_page.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/new_monitoring_page.png"
+        ],
+        "app_details": {
+          "deployment": "Este projeto é automaticamente implantado usando AWS Amplify. Um pipeline definido no arquivo amplify.yml lida com o processo de implantação contínua. A aplicação está disponível em: https://iot-system.rodolfo-silva.com",
+          "technologies": ["Angular", "JavaScript", "TypeScript", "Bootstrap", "RxJS", "Angular Material", "PrimeNG"],
+          "hosting": {
+            "description": "O frontend está hospedado usando AWS Amplify, fornecendo serviços de implantação contínua e hospedagem.",
+            "url": "https://iot-system.rodolfo-silva.com"
+          }
+        },
+        "api_details": {
+          "deployment": "A API do Sistema IoT está implantada em uma instância AWS EC2 rodando Amazon Linux. O processo de implantação é automatizado usando GitHub Actions.",
+          "technologies": ["Java 17", "Spring Boot", "Spring Security", "JWT", "Lombok", "JPA", "MySQL", "Swagger", "Gradle", "Docker"],
+          "hosting": {
+            "description": "A API backend está hospedada em uma instância AWS EC2 rodando Amazon Linux, proporcionando um ambiente robusto e escalável para a aplicação.",
+            "url": "https://iot-system.rodolfo-silva-api.com",
+            "coverage_report": "https://iot-system.rodolfo-silva-api.com/coverage/index.html"
+          }
+        }
       }
     ]
   },

@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<main>
+<main *ngIf="!isProjectDetailsPage">
   <section id="personal-data" class="section">
     <app-personal-data></app-personal-data>
   </section>
@@ -15,11 +15,14 @@
   <section id="education" class="section">
     <app-education></app-education>
   </section>
-  <section *ngIf="false" id="projects" class="section">
+  <section id="projects" class="section">
     <app-projects></app-projects>
   </section>
-  <section id="github-dashboard" class="section">
+  <section *ngIf="false" id="github-dashboard" class="section">
     <app-github-dashboard></app-github-dashboard>
   </section>
+</main>
+<main *ngIf="isProjectDetailsPage">
+  <router-outlet></router-outlet>
 </main>
 <app-footer></app-footer>

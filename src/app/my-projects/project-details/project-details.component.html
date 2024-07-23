@@ -1,0 +1,72 @@
+<div class="project-details" *ngIf="project">
+  <div class="container">
+    <div class="header text-center mb-4">
+      <h1>{{ project.name }}</h1>
+    </div>
+
+    <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div *ngFor="let image of project.images; let i = index" [class.active]="i === 0" class="carousel-item">
+          <img [src]="image" class="d-block w-100" alt="Project Image" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="description mb-4">
+      <p>{{ project.description }}</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="frontend-details">
+          <h2>{{ 'projects.projectDetails.frontend' | translate }}</h2>
+          <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.app_details?.technologies">
+              <div class="card text-center">
+                <div class="card-body">
+                  <p class="card-text">{{ tech }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
+          <p>{{ project.app_details?.deployment }}</p>
+          <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
+          <p>{{ project.app_details?.hosting?.description }}</p>
+          <p><a [href]="project.app_details?.hosting?.url">{{ project.app_details?.hosting?.url }}</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="backend-details">
+          <h2>{{ 'projects.projectDetails.backend' | translate }}</h2>
+          <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.api_details?.technologies">
+              <div class="card text-center">
+                <div class="card-body">
+                  <p class="card-text">{{ tech }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
+          <p>{{ project.api_details?.deployment }}</p>
+          <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
+          <p>{{ project.api_details?.hosting?.description }}</p>
+          <p><a [href]="project.api_details?.hosting?.url">{{ project.api_details?.hosting?.url }}</a></p>
+          <p><a [href]="project.api_details?.hosting?.coverage_report">{{ project.api_details?.hosting?.coverage_report }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

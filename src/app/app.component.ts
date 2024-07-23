@@ -15,6 +15,9 @@ import { FooterComponent } from './footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProfessionalExperiencesComponent } from './my-experiences/professional-experiences/professional-experiences.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { ProjectDetailsComponent } from './my-projects/project-details/project-details.component';
 
 @Component({
   selector: 'app-root',
@@ -30,18 +33,23 @@ import { CommonModule } from '@angular/common';
     NavbarComponent,
     FooterComponent,
     ProfessionalExperiencesComponent,
-    CommonModule
+    CommonModule,
+    ProjectDetailsComponent,
+    RouterModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   language$: Observable<string>;
+  isProjectDetailsPage: boolean = false;
 
   constructor(
     private store: Store,
     private translate: TranslateService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.language$ = this.store.select(selectLanguage);
   }
@@ -51,6 +59,13 @@ export class AppComponent implements OnInit {
       this.translate.use(language);
       this.cdr.detectChanges(); // Forçar detecção de mudanças
     });
+
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.isProjectDetailsPage = this.activatedRoute.firstChild?.snapshot.routeConfig?.path === 'project/:name';
+        this.cdr.detectChanges(); // Forçar detecção de mudanças
+      });
   }
 
   changeLanguage(language: string) {
