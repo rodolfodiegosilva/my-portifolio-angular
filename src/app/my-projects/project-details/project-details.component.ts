@@ -76,4 +76,8 @@ export class ProjectDetailsComponent implements OnInit {
       });
     }
   }
+
+  getTechnologyIcon(tech: string): string {
+    return `assets/icons/${tech.toLowerCase().replace(/ /g, '-')}.svg`;
+  }
 }

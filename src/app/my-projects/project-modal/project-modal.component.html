@@ -1,4 +1,3 @@
-<!-- project-modal.component.html -->
 <div
   class="modal fade"
   id="projectModal"
@@ -40,7 +39,7 @@
               class="carousel-item"
               [class.active]="i === 0"
             >
-              <img [src]="img" class="d-block w-100" alt="..." />
+              <img [src]="img" class="d-block w-100 img-fluid" alt="..." />
             </div>
           </div>
           <button
@@ -66,10 +65,10 @@
         <strong>Technologies:</strong>
 
         <div *ngIf="project.technologies?.length" class="technology-icons">
-          <i
-            *ngFor="let tech of project.technologies"
-            class="devicon-{{ tech }}-plain-wordmark colored tech-icon"
-          ></i>
+          <div *ngFor="let tech of project.technologies" class="tech-item">
+            <img [src]="getTechIcon(tech)" [alt]="tech" class="img-fluid" />
+            <p>{{ tech }}</p>
+          </div>
         </div>
 
         <div class="mt-3">
