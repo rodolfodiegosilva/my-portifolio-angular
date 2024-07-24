@@ -252,7 +252,7 @@
               "provider": "Alura",
               "issued": "Oct 2021",
               "credentialUrl": "https://cursos.alura.com.br/degree/certificate/420766e0-f98d-4d3e-930b-88f16a207310",
-              "skills": ["PostgreSQL","SQL"]
+              "skills": ["PostgreSQL", "SQL"]
             },
             {
               "name": "NodeJS and MongoDB Developer Course",
@@ -299,42 +299,42 @@
               "provider": "DIO",
               "issued": "Sep 2021",
               "credentialUrl": "https://hermes.digitalinnovation.one/certificates/7D64FA95.pdf",
-              "skills": ["Spring Boot","JDBC", "JPA", "Java"]
+              "skills": ["Spring Boot", "JDBC", "JPA", "Java"]
             },
             {
               "name": "Advanced Java Development",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/66C89D72",
-              "skills": ["Spring Boot","Java"]
+              "skills": ["Spring Boot", "Java"]
             },
             {
               "name": "Basic Java Development",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/1B94BCFB",
-              "skills": ["Spring Boot","Java"]
+              "skills": ["Spring Boot", "Java"]
             },
             {
               "name": "Introduction to object orientation with Java",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/DA8461D8",
-              "skills": ["Spring Boot","Java"]
+              "skills": ["Spring Boot", "Java"]
             },
             {
               "name": "Java data structure",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/97C65DC7",
-              "skills": ["Spring Boot","Java"]
+              "skills": ["Spring Boot", "Java"]
             },
             {
               "name": "Mastering Java IDEs",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/4604AD62",
-              "skills": ["Spring Boot","Java"]
+              "skills": ["Spring Boot", "Java"]
             }
           ]
         },
@@ -368,7 +368,15 @@
         "image": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/iot_system_app.png",
         "name": "IoT System App",
         "description": "This is the frontend for the IoT System API, built with Angular. The frontend allows users to interact with the IoT devices, manage them, and monitor their statuses.",
-        "technologies": ["angular", "angular-material", "primeng", "bootstrap", "typescript", "rxjs", "html5", "css3"],
+        "technologies": [
+          "Angular",
+          "Spring Boot",
+          "JavaScript",
+          "TypeScript",
+          "Java",
+          "MySQL",
+          "AWS"
+        ],
         "frontend": "http://github.com/rodolfodiegosilva/iot-system-app",
         "backend": "http://github.com/rodolfodiegosilva/iot-system-api",
         "link": "https://iot-system.rodolfo-silva.com",
@@ -382,7 +390,16 @@
         ],
         "app_details": {
           "deployment": "This project is automatically deployed using AWS Amplify. A pipeline defined in the amplify.yml file handles the continuous deployment process. The application is available at: https://iot-system.rodolfo-silva.com",
-          "technologies": ["Angular", "JavaScript", "TypeScript", "Bootstrap", "RxJS", "Angular Material", "PrimeNG"],
+          "technologies": [
+            "Angular",
+            "JavaScript",
+            "TypeScript",
+            "Bootstrap",
+            "RxJS",
+            "Angular Material",
+            "PrimeNG",
+            "AWS"
+          ],
           "hosting": {
             "description": "The frontend is hosted using AWS Amplify, providing continuous deployment and hosting services.",
             "url": "https://iot-system.rodolfo-silva.com"
@@ -390,7 +407,20 @@
         },
         "api_details": {
           "deployment": "The IoT System API is deployed on an AWS EC2 instance running Amazon Linux. The deployment process is automated using GitHub Actions.",
-          "technologies": ["Java 17", "Spring Boot", "Spring Security", "JWT", "Lombok", "JPA", "MySQL", "Swagger", "Gradle", "Docker"],
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "JWT",
+            "Lombok",
+            "JPA",
+            "MySQL",
+            "Swagger",
+            "Gradle",
+            "Docker",
+            "AWS",
+            "Git Actions"
+          ],
           "hosting": {
             "description": "The backend API is hosted on an AWS EC2 instance running Amazon Linux, providing a robust and scalable environment for the application.",
             "url": "https://iot-system.rodolfo-silva-api.com",

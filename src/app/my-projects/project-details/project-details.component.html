@@ -31,10 +31,9 @@
           <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
           <div class="row">
             <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.app_details?.technologies">
-              <div class="card text-center">
-                <div class="card-body">
-                  <p class="card-text">{{ tech }}</p>
-                </div>
+              <div class="tech-card">
+                <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                <p class="tech-name">{{ tech }}</p>
               </div>
             </div>
           </div>
@@ -52,10 +51,9 @@
           <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
           <div class="row">
             <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.api_details?.technologies">
-              <div class="card text-center">
-                <div class="card-body">
-                  <p class="card-text">{{ tech }}</p>
-                </div>
+              <div class="tech-card">
+                <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                <p class="tech-name">{{ tech }}</p>
               </div>
             </div>
           </div>

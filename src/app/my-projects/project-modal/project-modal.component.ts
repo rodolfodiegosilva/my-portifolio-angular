@@ -36,6 +36,10 @@ export class ProjectModalComponent implements OnInit {
     }
   }
 
+  getTechIcon(tech: string): string {
+    return `assets/icons/${tech.toLowerCase().replace(/ /g, '-')}.svg`;
+  }
+
   redirectToDetails(): void {
     if (this.project) {
       this.closeModal();
