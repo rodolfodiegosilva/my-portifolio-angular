@@ -8,11 +8,12 @@ frontend:
         - npm install --legacy-peer-deps
         - npm install @ngrx/store @ngrx/effects --legacy-peer-deps
         - npm ci --legacy-peer-deps
+        - node set-env.js  # Executar o script de configuração de ambiente
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/portfolio/browser
+    baseDirectory: dist/portfolio
     files:
       - '**/*'
   cache:
