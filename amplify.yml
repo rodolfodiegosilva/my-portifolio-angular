@@ -3,14 +3,23 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo "Installing Node.js version 20.11.1"
         - nvm install 20.11.1
         - nvm use 20.11.1
+        - echo "Installing project dependencies"
         - npm install --legacy-peer-deps
         - npm install @ngrx/store @ngrx/effects --legacy-peer-deps
         - npm ci --legacy-peer-deps
+        - npm install -g @angular/cli
+        - npm install dotenv
+        - echo "Environment variables:"
+        - printenv
+        - echo "Running set-env.js script"
+        - node set-env.js
     build:
       commands:
-        - npm run build
+        - echo "Building the project with Angular CLI"
+        - ng build --configuration production
   artifacts:
     baseDirectory: dist/portfolio/browser
     files:
@@ -18,3 +27,6 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+  environment:
+    variables:
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
