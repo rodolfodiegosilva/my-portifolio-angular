@@ -1,10 +1,19 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { selectLanguage } from '../../language.selectors';
+
+interface TestDetails {
+  type: string;
+  libraries_tools: string[];
+  how_to_execute: string;
+  report_details?: string;
+  report_link?: string;
+  last?: boolean;
+}
 
 interface Project {
   name: string;
@@ -23,6 +32,7 @@ interface Project {
       description?: string;
       url?: string;
     };
+    tests?: TestDetails[];
   };
   api_details?: {
     deployment?: string;
@@ -30,8 +40,9 @@ interface Project {
     hosting?: {
       description?: string;
       url?: string;
-      coverage_report?: string;
+      report_link?: string;
     };
+    tests?: TestDetails;
   };
 }
 
@@ -42,9 +53,10 @@ interface Project {
   standalone: true,
   imports: [CommonModule, TranslateModule],
 })
-export class ProjectDetailsComponent implements OnInit {
+export class ProjectDetailsComponent implements OnInit, OnDestroy {
   language$: Observable<string>;
   project: Project | null = null;
+  private subscriptions: Subscription = new Subscription();
 
   constructor(
     private route: ActivatedRoute,
@@ -56,15 +68,22 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.language$.subscribe((language) => {
-      this.translate.use(language);
-      this.loadProjectDetails(); // Carregar detalhes do projeto quando o idioma mudar
-      this.cdr.detectChanges(); // Forçar detecção de mudanças
-    });
+    this.subscriptions.add(
+      this.language$.subscribe((language) => {
+        this.translate.use(language);
+        this.loadProjectDetails();
+      })
+    );
 
-    this.route.paramMap.subscribe(() => {
-      this.loadProjectDetails();
-    });
+    this.subscriptions.add(
+      this.route.paramMap.subscribe(() => {
+        this.loadProjectDetails();
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
   }
 
   loadProjectDetails() {
@@ -72,7 +91,7 @@ export class ProjectDetailsComponent implements OnInit {
     if (projectName) {
       this.translate.get('projects.list').subscribe((res: any) => {
         this.project = res.find((project: any) => project.project === projectName) || null;
-        this.cdr.detectChanges(); // Forçar detecção de mudanças
+        this.cdr.detectChanges();
       });
     }
   }

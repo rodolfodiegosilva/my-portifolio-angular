@@ -26,43 +26,63 @@
 
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="frontend-details">
-          <h2>{{ 'projects.projectDetails.frontend' | translate }}</h2>
-          <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
-          <div class="row">
-            <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.app_details?.technologies">
-              <div class="tech-card">
-                <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
-                <p class="tech-name">{{ tech }}</p>
+        <div class="frontend-details card">
+          <div class="card-body">
+            <h2>{{ 'projects.projectDetails.frontend' | translate }}</h2>
+            <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.app_details?.technologies">
+                <div class="tech-card">
+                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                  <p class="tech-name">{{ tech }}</p>
+                </div>
               </div>
             </div>
+            <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
+            <p>{{ project.app_details?.deployment }}</p>
+            <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
+            <p>{{ project.app_details?.hosting?.description }}</p>
+            <p><a [href]="project.app_details?.hosting?.url">{{ project.app_details?.hosting?.url }}</a></p>
+            <h3 *ngIf="project.app_details?.tests">{{ 'projects.projectDetails.tests' | translate }}</h3>
+            <div *ngFor="let test of project.app_details?.tests">
+              <p><strong>Type:</strong> {{ test.type }}</p>
+              <p><strong>Libraries/Tools:</strong> {{ test.libraries_tools.join(', ') }}</p>
+              <p><strong>How to execute:</strong> {{ test.how_to_execute }}</p>
+              <p *ngIf="test.report_details"><strong>Report details:</strong> {{ test.report_details }}</p>
+              <p *ngIf="test.report_link"><strong>Report link:</strong> <a [href]="test.report_link">{{ test.report_link }}</a></p>
+              <div *ngIf="!test?.last"><hr class="test-divider"></div> <!-- Divider added here -->
+            </div>
           </div>
-          <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
-          <p>{{ project.app_details?.deployment }}</p>
-          <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
-          <p>{{ project.app_details?.hosting?.description }}</p>
-          <p><a [href]="project.app_details?.hosting?.url">{{ project.app_details?.hosting?.url }}</a></p>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="backend-details">
-          <h2>{{ 'projects.projectDetails.backend' | translate }}</h2>
-          <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
-          <div class="row">
-            <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.api_details?.technologies">
-              <div class="tech-card">
-                <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
-                <p class="tech-name">{{ tech }}</p>
+        <div class="backend-details card">
+          <div class="card-body">
+            <h2>{{ 'projects.projectDetails.backend' | translate }}</h2>
+            <h3>{{ 'projects.projectDetails.technologies' | translate }}</h3>
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.api_details?.technologies">
+                <div class="tech-card">
+                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                  <p class="tech-name">{{ tech }}</p>
+                </div>
               </div>
             </div>
+            <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
+            <p>{{ project.api_details?.deployment }}</p>
+            <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
+            <p>{{ project.api_details?.hosting?.description }}</p>
+            <p><a [href]="project.api_details?.hosting?.url">{{ project.api_details?.hosting?.url }}</a></p>
+            <h3 *ngIf="project.api_details?.tests">{{ 'projects.projectDetails.tests' | translate }}</h3>
+            <div *ngIf="project.api_details?.tests">
+              <p><strong>Type:</strong> {{ project.api_details?.tests?.type }}</p>
+              <p><strong>Libraries/Tools:</strong> {{ project.api_details?.tests?.libraries_tools?.join(', ') }}</p>
+              <p><strong>How to execute:</strong> {{ project.api_details?.tests?.how_to_execute }}</p>
+              <p *ngIf="project.api_details?.tests?.report_details"><strong>Report details:</strong> {{ project.api_details?.tests?.report_details }}</p>
+              <p *ngIf="project.api_details?.tests?.report_link"><strong>Report link:</strong> <a [href]="project.api_details?.tests?.report_link">{{ project.api_details?.tests?.report_link }}</a></p>
+            </div>
           </div>
-          <h3>{{ 'projects.projectDetails.cicd' | translate }}</h3>
-          <p>{{ project.api_details?.deployment }}</p>
-          <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
-          <p>{{ project.api_details?.hosting?.description }}</p>
-          <p><a [href]="project.api_details?.hosting?.url">{{ project.api_details?.hosting?.url }}</a></p>
-          <p><a [href]="project.api_details?.hosting?.coverage_report">{{ project.api_details?.hosting?.coverage_report }}</a></p>
         </div>
       </div>
     </div>

@@ -360,14 +360,15 @@
       "backend": "Backend",
       "technologies": "Tecnologias",
       "cicd": "CI/CD",
-      "hosting": "Hospedagem"
+      "hosting": "Hospedagem",
+      "tests": "Testes"
     },
     "list": [
       {
         "project": "iot_system_app",
         "image": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/iot_system_app.png",
-        "name": "IoT System App",
-        "description": "Este é o frontend da API do Sistema IoT, construído com Angular. O frontend permite que os usuários interajam com os dispositivos IoT, os gerenciem e monitorem seus status.",
+        "name": "Aplicação de Sistema IoT",
+        "description": "Este é o frontend para a API do Sistema IoT, construído com Angular. O frontend permite que os usuários interajam com os dispositivos IoT, gerenciem-nos e monitorem seus status.",
         "technologies": [
           "Angular",
           "Spring Boot",
@@ -389,7 +390,7 @@
           "https://my-portifolio-images.s3.us-east-2.amazonaws.com/imgs-iot-system-project/new_monitoring_page.png"
         ],
         "app_details": {
-          "deployment": "Este projeto é automaticamente implantado usando AWS Amplify. Um pipeline definido no arquivo amplify.yml lida com o processo de implantação contínua. A aplicação está disponível em: https://iot-system.rodolfo-silva.com",
+          "deployment": "Este projeto é implantado automaticamente usando AWS Amplify. Um pipeline definido no arquivo amplify.yml lida com o processo de implantação contínua. A aplicação está disponível em: https://iot-system.rodolfo-silva.com",
           "technologies": [
             "Angular",
             "JavaScript",
@@ -401,12 +402,31 @@
             "AWS"
           ],
           "hosting": {
-            "description": "O frontend está hospedado usando AWS Amplify, fornecendo serviços de implantação contínua e hospedagem.",
+            "description": "O frontend é hospedado usando AWS Amplify, fornecendo serviços de implantação contínua e hospedagem.",
             "url": "https://iot-system.rodolfo-silva.com"
-          }
+          },
+          "tests": null,
+          "tests_aux": [
+            {
+              "type": "Testes Unitários",
+              "libraries_tools": ["Jasmine", "Karma"],
+              "how_to_execute": "Execute `ng test` para executar os testes unitários.",
+              "report_details": "O relatório de testes unitários é gerado por Jasmine e Karma.",
+              "report_link": null,
+              "last": false
+            },
+            {
+              "type": "Testes Automatizados",
+              "libraries_tools": ["Cypress"],
+              "how_to_execute": "Execute `npx cypress run` para executar os testes automatizados.",
+              "report_details": "O relatório de testes automatizados é gerado por Cypress e está disponível em:",
+              "report_link": "https://iot-system.rodolfo-silva.com/automated-tests",
+              "last": true
+            }
+          ]
         },
         "api_details": {
-          "deployment": "A API do Sistema IoT está implantada em uma instância AWS EC2 rodando Amazon Linux. O processo de implantação é automatizado usando GitHub Actions.",
+          "deployment": "A API do Sistema IoT é implantada em uma instância AWS EC2 executando Amazon Linux. O processo de implantação é automatizado usando GitHub Actions.",
           "technologies": [
             "Java",
             "Spring Boot",
@@ -422,9 +442,15 @@
             "Git Actions"
           ],
           "hosting": {
-            "description": "A API backend está hospedada em uma instância AWS EC2 rodando Amazon Linux, proporcionando um ambiente robusto e escalável para a aplicação.",
-            "url": "https://iot-system.rodolfo-silva-api.com",
-            "coverage_report": "https://iot-system.rodolfo-silva-api.com/coverage/index.html"
+            "description": "A API backend é hospedada em uma instância AWS EC2 executando Amazon Linux, fornecendo um ambiente robusto e escalável para a aplicação.",
+            "url": "https://iot-system.rodolfo-silva-api.com"
+          },
+          "tests": {
+            "type": "Testes Unitários e de Integração",
+            "libraries_tools": ["JUnit", "Mockito", "JaCoCo"],
+            "how_to_execute": "Execute `./gradlew test` para executar tanto testes unitários quanto de integração.",
+            "report_details": "O relatório é gerado por meio da pipeline de deploy do GitHub Actions, que é copiado diretamente para uma pasta dentro da instância EC2 Linux na AWS.",
+            "report_link": "https://iot-system.rodolfo-silva-api.com/coverage/index.html"
           }
         }
       }
