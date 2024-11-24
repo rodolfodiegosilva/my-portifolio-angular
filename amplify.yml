@@ -8,8 +8,11 @@ frontend:
         - npm install --legacy-peer-deps
         - npm install @ngrx/store @ngrx/effects --legacy-peer-deps
         - npm ci --legacy-peer-deps
+        - npm install dotenv --save-dev
     build:
       commands:
+        - export GITHUB_TOKEN=${GITHUB_TOKEN}
+        - node set-env.js
         - npm run build
   artifacts:
     baseDirectory: dist/portfolio/browser

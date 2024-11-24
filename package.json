@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "prebuild": "node set-env.js",
+    "build": "npx ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -36,9 +37,13 @@
     "@aws-amplify/backend": "^1.8.0",
     "@aws-amplify/backend-cli": "^1.4.2",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.9.3",
+    "@types/yargs": "^17.0.33",
     "aws-cdk": "^2.170.0",
     "aws-cdk-lib": "^2.170.0",
     "constructs": "^10.4.2",
+    "dotenv": "^16.4.5",
+    "env-cmd": "^10.1.0",
     "esbuild": "^0.24.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
@@ -46,6 +51,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.2",
     "typescript": "^5.4.5"
   },
