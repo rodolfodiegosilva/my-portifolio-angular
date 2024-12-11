@@ -1,27 +1,224 @@
-# Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+# My Portfolio Angular
 
-## Development server
+Este é um projeto de portfólio desenvolvido em Angular. Ele exibe dados pessoais, perfil, habilidades, e projetos com integração à API do GitHub para obter dados dinâmicos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estrutura do Projeto
 
-## Code scaffolding
+```
+my-portfolio-angular/
+├── .angular/
+├── src/
+│   ├── app/
+│   │   ├── personal-data/
+│   │   │   ├── personal-data.component.css
+│   │   │   ├── personal-data.component.html
+│   │   │   └── personal-data.component.ts
+│   │   ├── profile/
+│   │   │   ├── profile.component.css
+│   │   │   ├── profile.component.html
+│   │   │   └── profile.component.ts
+│   │   ├── services/
+│   │   │   └── github.service.ts
+│   │   ├── skills/
+│   │   │   ├── skills.component.css
+│   │   │   ├── skills.component.html
+│   │   │   └── skills.component.ts
+│   │   ├── toggle-button/
+│   │   │   ├── toggle-button.component.css
+│   │   │   ├── toggle-button.component.html
+│   │   │   └── toggle-button.component.ts
+│   ├── assets/
+│   │   ├── i18n/
+│   │   │   ├── en.json
+│   │   │   └── pt.json
+│   │   ├── projects/
+│   ├── environments/
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+├── .editorconfig
+├── .gitignore
+├── angular.json
+├── package.json
+├── package-lock.json
+├── README.md
+└── tsconfig.json
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuração e Execução do Projeto
 
-## Build
+### Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (versão 20 ou superior)
+- Angular CLI (versão 17 ou superior)
 
-## Running unit tests
+### Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone o repositório**
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/rodolfodiegosilva/my-portifolio-angular.git
+cd my-portfolio-angular
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Instale as dependências**
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento, execute:
+
+```bash
+ng serve
+```
+
+O aplicativo estará disponível em `http://localhost:4200/`.
+
+### Construção
+
+Para construir o projeto para produção, execute:
+
+```bash
+ng build --prod
+```
+
+Os arquivos de saída estarão na pasta `dist/`.
+
+### Testes
+
+Para executar os testes unitários via [Karma](https://karma-runner.github.io):
+
+```bash
+ng test
+```
+
+Para executar os testes end-to-end via [Protractor](http://www.protractortest.org/):
+
+```bash
+ng e2e
+```
+
+## Documentação dos Componentes
+
+### PersonalDataComponent
+
+**Localização:** `src/app/personal-data/personal-data.component.*`
+
+**Descrição:** Exibe os dados pessoais do usuário.
+
+#### personal-data.component.ts
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-personal-data',
+  templateUrl: './personal-data.component.html',
+  styleUrls: ['./personal-data.component.css']
+})
+export class PersonalDataComponent {
+  // Propriedades e métodos do componente
+}
+```
+
+### ProfileComponent
+
+**Localização:** `src/app/profile/profile.component.*`
+
+**Descrição:** Exibe o perfil do usuário.
+
+#### profile.component.ts
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
+})
+export class ProfileComponent {
+  // Propriedades e métodos do componente
+}
+```
+
+### SkillsComponent
+
+**Localização:** `src/app/skills/skills.component.*`
+
+**Descrição:** Exibe as habilidades do usuário.
+
+#### skills.component.ts
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.css']
+})
+export class SkillsComponent {
+  // Propriedades e métodos do componente
+}
+```
+
+### ToggleButtonComponent
+
+**Localização:** `src/app/toggle-button/toggle-button.component.*`
+
+**Descrição:** Componente de botão de alternância.
+
+#### toggle-button.component.ts
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-toggle-button',
+  templateUrl: './toggle-button.component.html',
+  styleUrls: ['./toggle-button.component.css']
+})
+export class ToggleButtonComponent {
+  // Propriedades e métodos do componente
+}
+```
+
+## Serviços
+
+### GithubService
+
+**Localização:** `src/app/services/github.service.ts`
+
+**Descrição:** Serviço para integração com a API do GitHub.
+
+#### github.service.ts
+
+```typescript
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class GithubService {
+  private apiUrl = 'https://api.github.com';
+
+  constructor(private http: HttpClient) { }
+
+  getUserRepos(username: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/users/${username}/repos`);
+  }
+}
+```
+
+## Internacionalização
+
+Os arquivos de tradução estão localizados em `src/assets/i18n/`. Atualmente, há suporte para inglês (`en.json`) e português (`pt.json`).
+
+---
+
