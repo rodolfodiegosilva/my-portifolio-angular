@@ -7,16 +7,16 @@
     <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div *ngFor="let image of project.images; let i = index" [class.active]="i === 0" class="carousel-item">
-          <img [src]="image" class="d-block w-100" alt="Project Image" />
+          <img [src]="image" class="d-block w-100" [alt]="'Image ' + (i + 1) + ' of ' + project.name">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">{{ 'previous' | translate }}</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">{{ 'next' | translate }}</span>
       </button>
     </div>
 
@@ -33,7 +33,7 @@
             <div class="row">
               <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.app_details?.technologies">
                 <div class="tech-card">
-                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon">
                   <p class="tech-name">{{ tech }}</p>
                 </div>
               </div>
@@ -42,15 +42,18 @@
             <p>{{ project.app_details?.deployment }}</p>
             <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
             <p>{{ project.app_details?.hosting?.description }}</p>
-            <p><a [href]="project.app_details?.hosting?.url">{{ project.app_details?.hosting?.url }}</a></p>
+            <p *ngIf="project.app_details?.hosting?.url">
+              <a [href]="project.app_details?.hosting?.url" target="_blank">{{ project.app_details?.hosting?.url }}</a>
+            </p>
             <h3 *ngIf="project.app_details?.tests">{{ 'projects.projectDetails.tests' | translate }}</h3>
             <div *ngFor="let test of project.app_details?.tests">
-              <p><strong>Type:</strong> {{ test.type }}</p>
-              <p><strong>Libraries/Tools:</strong> {{ test.libraries_tools.join(', ') }}</p>
-              <p><strong>How to execute:</strong> {{ test.how_to_execute }}</p>
-              <p *ngIf="test.report_details"><strong>Report details:</strong> {{ test.report_details }}</p>
-              <p *ngIf="test.report_link"><strong>Report link:</strong> <a [href]="test.report_link">{{ test.report_link }}</a></p>
-              <div *ngIf="!test?.last"><hr class="test-divider"></div> <!-- Divider added here -->
+              <p><strong>{{ 'type' | translate }}:</strong> {{ test.type }}</p>
+              <p><strong>{{ 'libraries_tools' | translate }}:</strong> {{ test.libraries_tools.join(', ') }}</p>
+              <p><strong>{{ 'how_to_execute' | translate }}:</strong> {{ test.how_to_execute }}</p>
+              <p *ngIf="test.report_details"><strong>{{ 'report_details' | translate }}:</strong> {{ test.report_details }}</p>
+              <p *ngIf="test.report_link"><strong>{{ 'report_link' | translate }}:</strong> 
+                <a [href]="test.report_link" target="_blank">{{ test.report_link }}</a></p>
+              <hr *ngIf="!test?.last" class="test-divider">
             </div>
           </div>
         </div>
@@ -64,7 +67,7 @@
             <div class="row">
               <div class="col-6 col-sm-4 col-md-6 col-lg-4 mb-3" *ngFor="let tech of project.api_details?.technologies">
                 <div class="tech-card">
-                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon" />
+                  <img [src]="getTechnologyIcon(tech)" [alt]="tech" class="img-fluid tech-icon">
                   <p class="tech-name">{{ tech }}</p>
                 </div>
               </div>
@@ -73,14 +76,17 @@
             <p>{{ project.api_details?.deployment }}</p>
             <h3>{{ 'projects.projectDetails.hosting' | translate }}</h3>
             <p>{{ project.api_details?.hosting?.description }}</p>
-            <p><a [href]="project.api_details?.hosting?.url">{{ project.api_details?.hosting?.url }}</a></p>
+            <p *ngIf="project.api_details?.hosting?.url">
+              <a [href]="project.api_details?.hosting?.url" target="_blank">{{ project.api_details?.hosting?.url }}</a>
+            </p>
             <h3 *ngIf="project.api_details?.tests">{{ 'projects.projectDetails.tests' | translate }}</h3>
             <div *ngIf="project.api_details?.tests">
-              <p><strong>Type:</strong> {{ project.api_details?.tests?.type }}</p>
-              <p><strong>Libraries/Tools:</strong> {{ project.api_details?.tests?.libraries_tools?.join(', ') }}</p>
-              <p><strong>How to execute:</strong> {{ project.api_details?.tests?.how_to_execute }}</p>
-              <p *ngIf="project.api_details?.tests?.report_details"><strong>Report details:</strong> {{ project.api_details?.tests?.report_details }}</p>
-              <p *ngIf="project.api_details?.tests?.report_link"><strong>Report link:</strong> <a [href]="project.api_details?.tests?.report_link">{{ project.api_details?.tests?.report_link }}</a></p>
+              <p><strong>{{ 'type' | translate }}:</strong> {{ project.api_details?.tests?.type }}</p>
+              <p><strong>{{ 'libraries_tools' | translate }}:</strong> {{ project.api_details?.tests?.libraries_tools?.join(', ') }}</p>
+              <p><strong>{{ 'how_to_execute' | translate }}:</strong> {{ project.api_details?.tests?.how_to_execute }}</p>
+              <p *ngIf="project.api_details?.tests?.report_details"><strong>{{ 'report_details' | translate }}:</strong> {{ project.api_details?.tests?.report_details }}</p>
+              <p *ngIf="project.api_details?.tests?.report_link"><strong>{{ 'report_link' | translate }}:</strong> 
+                <a [href]="project.api_details?.tests?.report_link" target="_blank">{{ project.api_details?.tests?.report_link }}</a></p>
             </div>
           </div>
         </div>

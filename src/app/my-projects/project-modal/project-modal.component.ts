@@ -1,38 +1,33 @@
-import { Component, Input, OnInit } from '@angular/core';
+// project-modal.component.ts
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { Project } from '../project.service';
 
 declare var bootstrap: any;
 
-interface Project {
-  name: string;
-  description: string;
-  image: string;
-  technologies?: string[];
-  link?: string;
-  frontend?: string;
-  backend?: string;
-  images?: string[];
-  project: string;
-}
-
 @Component({
   selector: 'app-project-modal',
-  templateUrl: './project-modal.component.html',
-  styleUrls: ['./project-modal.component.css'],
   standalone: true,
   imports: [CommonModule, TranslateModule],
+  templateUrl: './project-modal.component.html',
+  styleUrls: ['./project-modal.component.css'],
 })
-export class ProjectModalComponent implements OnInit {
+export class ProjectModalComponent implements OnChanges {
   @Input() project: Project | null = null;
+  @Output() closeModal = new EventEmitter<void>();
+  private modalInstance: any;
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    const modalElement = document.getElementById('projectModal');
-    if (modalElement) {
-      new bootstrap.Modal(modalElement);
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['project'] && this.project) {
+      const modalElement = document.getElementById('projectModal');
+      if (modalElement) {
+        this.modalInstance = new bootstrap.Modal(modalElement);
+        this.modalInstance.show();
+      }
     }
   }
 
@@ -42,16 +37,15 @@ export class ProjectModalComponent implements OnInit {
 
   redirectToDetails(): void {
     if (this.project) {
-      this.closeModal();
+      this.close();
       this.router.navigate(['/project', this.project.project]);
     }
   }
 
-  closeModal(): void {
-    const modal = document.getElementById('projectModal');
-    if (modal) {
-      const bsModal = bootstrap.Modal.getInstance(modal);
-      bsModal.hide();
+  close(): void {
+    if (this.modalInstance) {
+      this.modalInstance.hide();
     }
+    this.closeModal.emit();
   }
 }

@@ -42,8 +42,8 @@ export class PersonalDataComponent implements OnInit {
   ngOnInit() {
     this.language$.subscribe((language) => {
       this.translate.use(language);
-      this.loadProjects(); // Carregar projetos quando o idioma mudar
-      this.cdr.detectChanges(); // Forçar detecção de mudanças
+      this.loadProjects();
+      this.cdr.detectChanges();
     });
   }
 
