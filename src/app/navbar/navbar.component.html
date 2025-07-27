@@ -1,6 +1,6 @@
 <nav class="nav">
   <a href="#" class="nav__logo">Rodolfo Silva</a>
-  <div *ngIf="!menuOpen" class="toggle-container-responsive">
+  <div class="toggle-container-responsive">
     <app-toggle-button
       (languageChanged)="switchLanguage($event)"
     ></app-toggle-button>
@@ -63,7 +63,7 @@
     >
       <i class="fa fa-2x fa-times"></i>
     </a>
-    <div *ngIf="!menuOpen" class="toggle-container-desktop">
+    <div class="toggle-container-desktop">
       <app-toggle-button
         (languageChanged)="switchLanguage($event)"
       ></app-toggle-button>

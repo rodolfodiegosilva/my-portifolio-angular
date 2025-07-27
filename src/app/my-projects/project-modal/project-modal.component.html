@@ -1,109 +1,55 @@
-<div
-  class="modal fade"
-  id="projectModal"
-  tabindex="-1"
-  aria-labelledby="projectModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" *ngIf="project">
       <div class="modal-header">
         <h5 class="modal-title" id="projectModalLabel">{{ project.name }}</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close" (click)="close()" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button
-              type="button"
-              *ngFor="let img of project.images; let i = index"
-              [attr.data-bs-target]="'#carouselExampleIndicators'"
-              [attr.data-bs-slide-to]="i"
-              [class.active]="i === 0"
-              aria-current="true"
-              [attr.aria-label]="'Slide ' + (i + 1)"
-            ></button>
+            <button *ngFor="let img of project.images; let i = index" type="button"
+                    [attr.data-bs-target]="'#carouselExampleIndicators'" [attr.data-bs-slide-to]="i"
+                    [class.active]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)"></button>
           </div>
           <div class="carousel-inner">
-            <div
-              *ngFor="let img of project.images; let i = index"
-              class="carousel-item"
-              [class.active]="i === 0"
-            >
-              <img [src]="img" class="d-block w-100 img-fluid" alt="..." />
+            <div *ngFor="let img of project.images; let i = index" class="carousel-item" [class.active]="i === 0">
+              <img [src]="img" class="d-block w-100 img-fluid" [alt]="'Image ' + (i + 1) + ' of ' + project.name">
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">{{ "previous" | translate }}</span>
+            <span class="visually-hidden">{{ 'previous' | translate }}</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">{{ "next" | translate }}</span>
+            <span class="visually-hidden">{{ 'next' | translate }}</span>
           </button>
         </div>
         <p class="mt-3">{{ project.description }}</p>
-        <strong>Technologies:</strong>
-
+        <strong>{{ 'technologies' | translate }}:</strong>
         <div *ngIf="project.technologies?.length" class="technology-icons">
           <div *ngFor="let tech of project.technologies" class="tech-item">
-            <img [src]="getTechIcon(tech)" [alt]="tech" class="img-fluid" />
+            <img [src]="getTechIcon(tech)" [alt]="tech" class="img-fluid">
             <p>{{ tech }}</p>
           </div>
         </div>
-
         <div class="mt-3">
-          <a
-            *ngIf="project.link"
-            [href]="project.link"
-            class="btn btn-primary me-2"
-            target="_blank"
-            >{{ "view_project" | translate }}</a
-          >
-          <a
-            *ngIf="project.frontend"
-            [href]="project.frontend"
-            class="btn btn-secondary me-2"
-            target="_blank"
-            >{{ "frontend_repo" | translate }}</a
-          >
-          <a
-            *ngIf="project.backend"
-            [href]="project.backend"
-            class="btn btn-secondary"
-            target="_blank"
-            >{{ "backend_repo" | translate }}</a
-          >
+          <a *ngIf="project.link" [href]="project.link" class="btn btn-primary me-2" target="_blank" 
+             [attr.aria-label]="'View project ' + project.name">{{ 'view_project' | translate }}</a>
+          <a *ngIf="project.frontend" [href]="project.frontend" class="btn btn-secondary me-2" target="_blank"
+             [attr.aria-label]="'Frontend repository for ' + project.name">{{ 'frontend_repo' | translate }}</a>
+          <a *ngIf="project.backend" [href]="project.backend" class="btn btn-secondary" target="_blank"
+             [attr.aria-label]="'Backend repository for ' + project.name">{{ 'backend_repo' | translate }}</a>
         </div>
         <div class="mt-3">
-          <button class="btn btn-info" (click)="redirectToDetails()">
-            {{ "view_details" | translate }}
+          <button class="btn btn-info" (click)="redirectToDetails()" aria-label="View project details">
+            {{ 'view_details' | translate }}
           </button>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          {{ "close" | translate }}
-        </button>
+        <button type="button" class="btn btn-secondary" (click)="close()">{{ 'close' | translate }}</button>
       </div>
     </div>
   </div>

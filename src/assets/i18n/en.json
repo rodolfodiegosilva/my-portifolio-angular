@@ -146,28 +146,37 @@
               "provider": "LinkedIn",
               "issued": "Sep 2023",
               "credentialUrl": "https://www.linkedin.com/learning/certificates/4cf70b86f6de757f1a1d9541155b6c84dd611b393bd839ad8c3cbe751bc31b9b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
-              "skills": ["Kubernetes"]
+              "skills": [
+                "Kubernetes"
+              ]
             },
             {
               "name": "DevOps Foundations: Continuous Delivery/Continuous Integration",
               "provider": "LinkedIn",
               "issued": "Aug 2023",
               "credentialUrl": "https://www.linkedin.com/learning/certificates/0d93dcfb1c9c7fdc5ae385807e1da6ab48248d164a09ccc5200bfbb70203eca3",
-              "skills": ["CI/CD", "DevOps"]
+              "skills": [
+                "CI/CD",
+                "DevOps"
+              ]
             },
             {
               "name": "DevOps Foundations",
               "provider": "LinkedIn",
               "issued": "Jul 2023",
               "credentialUrl": "https://www.linkedin.com/learning/certificates/0e6729cd854e30bce078ae423eb38fcc982988635b9353a299c88ce59c6e4aba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
-              "skills": ["DevOps"]
+              "skills": [
+                "DevOps"
+              ]
             },
             {
               "name": "Learning the Elastic Stack",
               "provider": "LinkedIn",
               "issued": "Aug 2023",
               "credentialUrl": "https://www.linkedin.com/learning/certificates/1400d358e45d4b8f85d2cbc9e06eeb46b1cb56f437317d66e450e56767157237?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
-              "skills": ["Elastic Stack"]
+              "skills": [
+                "Elastic Stack"
+              ]
             }
           ]
         },
@@ -179,14 +188,20 @@
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/DBA27BFC",
-              "skills": ["Git", "GitHub"]
+              "skills": [
+                "Git",
+                "GitHub"
+              ]
             },
             {
               "name": "Working with Branches on GitHub",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/DC36EAFA",
-              "skills": ["Git", "GitHub"]
+              "skills": [
+                "Git",
+                "GitHub"
+              ]
             }
           ]
         },
@@ -198,49 +213,74 @@
               "provider": "LinkedIn",
               "issued": "Aug 2023",
               "credentialUrl": "https://www.linkedin.com/learning/certificates/4b7259953b0360b82e0898306f4f437e09deec092c53df8e111465ac013e5c24?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeKu3z9z0R06M%2B%2B3NuskYWA%3D%3D",
-              "skills": ["CSS"]
+              "skills": [
+                "CSS"
+              ]
             },
             {
               "name": "Manage React Applications with TypeScript Track",
               "provider": "Alura",
               "issued": "Jun 2023",
               "credentialUrl": "https://cursos.alura.com.br/degree/certificate/2fe4e2e8-b9cd-47af-bd8e-8e24cf5bac3a",
-              "skills": ["React.js", "TypeScript", "JavaScript"]
+              "skills": [
+                "React.js",
+                "TypeScript",
+                "JavaScript"
+              ]
             },
             {
               "name": "React with TypeScript Track",
               "provider": "Alura",
               "issued": "Jun 2023",
               "credentialUrl": "https://cursos.alura.com.br/degree/certificate/4a9f23d1-f97d-4a60-9ed0-0db85aa6ea91",
-              "skills": ["React.js", "TypeScript", "JavaScript"]
+              "skills": [
+                "React.js",
+                "TypeScript",
+                "JavaScript"
+              ]
             },
             {
               "name": "Modern Web Course Complete with JavaScript",
               "provider": "Udemy Brasil",
               "issued": "Dec 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-b77cb74b-c3a0-44fe-8274-c0f9c7ad764c/",
-              "skills": ["Angular", "TypeScript", "JavaScript"]
+              "skills": [
+                "Angular",
+                "TypeScript",
+                "JavaScript"
+              ]
             },
             {
               "name": "WEB Development Course with ES6, TypeScript and Angular",
               "provider": "Udemy Brasil",
               "issued": "Dec 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-d533bf3b-1953-46e8-afa1-0c4d1e3feab2/",
-              "skills": ["Angular", "TypeScript", "JavaScript"]
+              "skills": [
+                "Angular",
+                "TypeScript",
+                "JavaScript"
+              ]
             },
             {
               "name": "Angular Web Development",
               "provider": "Udemy Brasil",
               "issued": "Jan 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-46f066f5-e824-42d0-9263-6f45931ac54d/",
-              "skills": ["Angular", "TypeScript", "JavaScript"]
+              "skills": [
+                "Angular",
+                "TypeScript",
+                "JavaScript"
+              ]
             },
             {
               "name": "Complete Web Development Course",
               "provider": "Udemy Brasil",
               "issued": "May 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-1ecef29d-a8bf-4a64-a306-e3c47f66e83a/",
-              "skills": ["Web Development", "JavaScript"]
+              "skills": [
+                "Web Development",
+                "JavaScript"
+              ]
             }
           ]
         },
@@ -252,14 +292,19 @@
               "provider": "Alura",
               "issued": "Oct 2021",
               "credentialUrl": "https://cursos.alura.com.br/degree/certificate/420766e0-f98d-4d3e-930b-88f16a207310",
-              "skills": ["PostgreSQL", "SQL"]
+              "skills": [
+                "PostgreSQL",
+                "SQL"
+              ]
             },
             {
               "name": "NodeJS and MongoDB Developer Course",
               "provider": "Udemy Brasil",
               "issued": "Dec 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
-              "skills": ["MongoDB"]
+              "skills": [
+                "MongoDB"
+              ]
             }
           ]
         },
@@ -271,70 +316,103 @@
               "provider": "Udemy Brasil",
               "issued": "Dec 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-f4854c95-af9b-4d2f-9f8d-5c637912af6c/",
-              "skills": ["NodeJS", "JavaScript"]
+              "skills": [
+                "NodeJS",
+                "JavaScript"
+              ]
             },
             {
               "name": "Machine Learning and Data Science with Python",
               "provider": "Udemy Brasil",
               "issued": "May 2021",
               "credentialUrl": "https://www.udemy.com/certificate/UC-062f5e7b-eb40-48d4-8925-196f0a48b1dd/",
-              "skills": ["Machine Learning", "Data Science", "Python"]
+              "skills": [
+                "Machine Learning",
+                "Data Science",
+                "Python"
+              ]
             },
             {
               "name": "Introduction to the Spring Boot Framework",
               "provider": "DIO",
               "issued": "Sep 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/2CDDA3DB",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Java- Working with Collections",
               "provider": "DIO",
               "issued": "Sep 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/4F09FF14",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Working with Bank Data using JDBC and JPA",
               "provider": "DIO",
               "issued": "Sep 2021",
               "credentialUrl": "https://hermes.digitalinnovation.one/certificates/7D64FA95.pdf",
-              "skills": ["Spring Boot", "JDBC", "JPA", "Java"]
+              "skills": [
+                "Spring Boot",
+                "JDBC",
+                "JPA",
+                "Java"
+              ]
             },
             {
               "name": "Advanced Java Development",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/66C89D72",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Basic Java Development",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/1B94BCFB",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Introduction to object orientation with Java",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/DA8461D8",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Java data structure",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/97C65DC7",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             },
             {
               "name": "Mastering Java IDEs",
               "provider": "DIO",
               "issued": "Aug 2021",
               "credentialUrl": "https://certificates.digitalinnovation.one/4604AD62",
-              "skills": ["Spring Boot", "Java"]
+              "skills": [
+                "Spring Boot",
+                "Java"
+              ]
             }
           ]
         },
@@ -346,7 +424,9 @@
               "provider": "CertiProf",
               "issued": "May 2021",
               "credentialUrl": "https://www.certiprof.com/63379388C",
-              "skills": ["Scrum"]
+              "skills": [
+                "Scrum"
+              ]
             }
           ]
         }
@@ -409,7 +489,10 @@
           "tests_aux": [
             {
               "type": "Unit Tests",
-              "libraries_tools": ["Jasmine", "Karma"],
+              "libraries_tools": [
+                "Jasmine",
+                "Karma"
+              ],
               "how_to_execute": "Run `ng test` to execute the unit tests.",
               "report_details": "Unit test report is generated by Jasmine and Karma.",
               "report_link": null,
@@ -417,7 +500,9 @@
             },
             {
               "type": "Automated Tests",
-              "libraries_tools": ["Cypress"],
+              "libraries_tools": [
+                "Cypress"
+              ],
               "how_to_execute": "Run `npx cypress run` to execute the automated tests.",
               "report_details": "Automated test report is generated by Cypress and is available at:",
               "report_link": "https://iot-system.rodolfo-silva.com/automated-tests",
@@ -447,10 +532,108 @@
           },
           "tests": {
             "type": "Unit Tests and Integration Tests",
-            "libraries_tools": ["JUnit", "Mockito", "JaCoCo"],
+            "libraries_tools": [
+              "JUnit",
+              "Mockito",
+              "JaCoCo"
+            ],
             "how_to_execute": "Run `./gradlew test` to execute both unit and integration tests.",
             "report_details": "The report is generated using JaCoCo through the deployment pipeline in GitHub Actions, and is copied directly to a folder within the EC2 Linux instance on AWS.",
             "report_link": "https://iot-system.rodolfo-silva-api.com/coverage/index.html"
+          }
+        }
+      },
+      {
+        "project": "clubinho_nib",
+        "image": "https://my-portifolio-images.s3.us-east-2.amazonaws.com/logo192.png",
+        "name": "Clubinho NIB",
+        "description": "A pedagogical support platform for teachers engaged in evangelism for children, providing resources and tools to organize and enhance their activities.",
+        "technologies": [
+          "React",
+          "NestJS",
+          "MySQL",
+          "AWS",
+          "MUI Material",
+          "Jest",
+          "Jasmine"
+        ],
+        "frontend": "https://github.com/rodolfodiegosilva/clubinhosnib-app",
+        "backend": "https://github.com/rodolfodiegosilva/clubinhosnib-api",
+        "link": "https://clubinhonib.com/",
+        "images": [
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_1.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_2.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_3.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_4.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_5.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_6.png",
+          "https://my-portifolio-images.s3.us-east-2.amazonaws.com/projeto-clubinho/Screenshot_7.png"
+        ],
+        "app_details": {
+          "deployment": "This project is automatically deployed using AWS Amplify with CI/CD integrated via GitHub. The application is available at: https://clubinhonib.com/",
+          "technologies": [
+            "React",
+            "MUI Material",
+            "React Router",
+            "Axios",
+            "Redux",
+            "AWS"
+          ],
+          "hosting": {
+            "description": "The frontend is hosted using AWS Amplify with a custom domain, providing continuous deployment and hosting services integrated with GitHub.",
+            "url": "https://clubinhonib.com/"
+          },
+          "tests": null,
+          "tests_aux": [
+            {
+              "type": "Unit Tests",
+              "libraries_tools": [
+                "Jest",
+                "Jasmine"
+              ],
+              "how_to_execute": "Run `npm test` to execute the unit tests.",
+              "report_details": "Unit test report is generated by Jest and Jasmine.",
+              "report_link": null,
+              "last": false
+            },
+            {
+              "type": "Automated Tests",
+              "libraries_tools": [
+                "Cypress"
+              ],
+              "how_to_execute": "Run `npx cypress run` to execute the automated tests.",
+              "report_details": "Automated test report is generated by Cypress and is available at:",
+              "report_link": null,
+              "last": true
+            }
+          ]
+        },
+        "api_details": {
+          "deployment": "The backend API is deployed on an AWS EC2 instance using Docker containers. GitHub Actions pushes images to Docker Hub, and the EC2 instance pulls and deploys them automatically. Additionally, AWS Lambda is integrated for specific serverless tasks.",
+          "technologies": [
+            "NestJS",
+            "MySQL",
+            "JWT",
+            "TypeORM",
+            "Swagger",
+            "Docker",
+            "AWS",
+            "GitHub Actions"
+          ],
+          "hosting": {
+            "description": "The backend API is hosted on AWS EC2 with Docker, using a CI/CD pipeline from GitHub Actions and images stored on Docker Hub. AWS Lambda is leveraged for additional serverless features.",
+            "url": "https://clubinhonib.com/api"
+          },
+          "tests": {
+            "type": "Unit, Integration and E2E Tests",
+            "libraries_tools": [
+              "JUnit",
+              "Postman",
+              "Jest"
+            ],
+            "how_to_execute": "Run `npm test` for Jest tests and `./gradlew test` for JUnit tests.",
+            "report_details": "Test coverage reports are generated during the CI/CD process and can be integrated into the deployment pipeline.",
+            "report_link": null
           }
         }
       }
@@ -492,8 +675,26 @@
     "experiences": [
       {
         "position": "Full Stack Developer",
+        "company": "Instituto de Pesquisa Eldorado (Motorola Project)",
+        "period": "Nov 2024 — Present",
+        "responsibilities": [
+          "Work as a full stack developer on large-scale B2C projects for Motorola, focusing on high-performance and scalable solutions.",
+          "Develop modern web interfaces using React, building reusable components and optimizing performance for enhanced user experience.",
+          "Design and maintain REST APIs and backend services with NestJS, applying clean architecture principles and dependency injection.",
+          "Model and integrate data with MySQL for persistence and Redis for high-performance caching, ensuring low latency and horizontal scalability.",
+          "Responsible for cloud architecture and engineering on AWS, implementing solutions using EC2, S3, Lambda, RDS, CloudFront, and API Gateway for production and staging environments.",
+          "Leverage Infrastructure as Code (IaC) and CI/CD practices to automate pipelines and enable consistent deployments.",
+          "Actively participate in Agile Scrum planning using Jira and Confluence for sprint management, backlog tracking, and technical documentation.",
+          "Perform code reviews ensuring quality standards and best practices in Git version control workflows.",
+          "Contribute to system optimization and monitoring, analyzing metrics and logs to prevent failures and ensure high availability.",
+          "Support strategic technical decisions regarding cloud architecture and scalability to meet the demands of millions of end users."
+        ],
+        "stacks": "React, NestJS, TypeScript, JavaScript (ES6+), MySQL, Redis, AWS (EC2, S3, Lambda, RDS, CloudFront, API Gateway), Git, Jira, Confluence, Docker, Agile (Scrum)"
+      },
+      {
+        "position": "Full Stack Developer",
         "company": "CI&T Software",
-        "period": "Jan 2024 — Present",
+        "period": "Jan 2024 — Nov 2024",
         "responsibilities": [
           "Design and develop applications using Agile Scrum methodology, using Atlassian tools like Jira and Confluence, dividing the project into multiple sprints.",
           "Use Bitbucket for version control collaborating with other developers using pull requests.",

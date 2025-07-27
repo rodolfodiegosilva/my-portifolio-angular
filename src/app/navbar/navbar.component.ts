@@ -31,7 +31,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.language$.subscribe((language) => {
       this.translate.use(language);
-      this.cdr.detectChanges(); // Forçar detecção de mudanças
+      this.cdr.detectChanges();
     });
   }
 
@@ -45,7 +45,7 @@ export class NavbarComponent implements OnInit {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-      this.menuOpen = false; // Fechar o menu ao clicar em um item
+      this.menuOpen = false;
     });
   }
 

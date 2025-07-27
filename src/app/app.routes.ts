@@ -5,5 +5,5 @@ import { ProjectDetailsComponent } from './my-projects/project-details/project-d
 export const routes: Routes = [
   { path: '', component: ProjectsComponent },
   { path: 'project/:name', component: ProjectDetailsComponent },
-  { path: '**', redirectTo: '' } // Redireciona para a página inicial se a rota não for encontrada
+  { path: '**', redirectTo: '' }
 ];
