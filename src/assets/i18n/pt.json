@@ -16,7 +16,12 @@
   },
   "profile": {
     "about_title": "Olá, eu sou Rodolfo Silva. Obrigado por visitar meu site.",
-    "about_description": "Desenvolvedor Web experiente em todas as etapas do desenvolvimento web. Conhecimento em interface de usuário, testes e manutenção de sistemas web. Equipado com um conjunto diversificado e promissor de habilidades. Proficiência em várias tecnologias, incluindo Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB e MySQL. Capaz de gerenciar efetivamente projetos independentes e colaborar em equipe."
+    "about_description": "Desenvolvedor Web experiente em todas as etapas do desenvolvimento web. Conhecimento em interface de usuário, testes e manutenção de sistemas web. Equipado com um conjunto diversificado e promissor de habilidades. Proficiência em várias tecnologias, incluindo Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB e MySQL. Capaz de gerenciar efetivamente projetos independentes e colaborar em equipe.",
+    "stats": {
+      "now": "Atualmente",
+      "focus": "Foco",
+      "focus_value": "UI limpa • APIs escaláveis • Cloud"
+    }
   },
   "skills": {
     "title": "Habilidades",

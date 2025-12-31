@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DestroyRef, OnInit, inject } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
@@ -10,7 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { EducationModalComponent } from './education-modal/education-modal.component';
 import { TechnologyModalComponent } from './technology-modal/technology-modal.component';
-import { Education, Technology, Course } from '../models/education.model';
+import { Education, Technology } from '../models/education.model';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 declare var bootstrap: any;
 
@@ -31,6 +32,8 @@ declare var bootstrap: any;
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EducationComponent implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
+
   language$: Observable<string>;
   education: Education[] = [];
   technologies: Technology[] = [];
@@ -46,14 +49,16 @@ export class EducationComponent implements OnInit {
   readonly panelOpenState = signal(false);
 
   ngOnInit() {
-    this.language$.subscribe((language) => {
-      this.translate.use(language);
-      this.loadEducation(); // Carregar dados de educação quando o idioma mudar
-    });
+    this.language$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((language) => {
+        this.translate.use(language);
+        this.loadEducation(); // Carregar dados de educação quando o idioma mudar
+      });
   }
 
   loadEducation() {
-    this.translate.get('education').subscribe((res: any) => {
+    this.translate.get('education').pipe(takeUntilDestroyed(this.destroyRef)).subscribe((res: any) => {
       this.education = res.degrees.map((edu: any) => ({
         degree: edu.degree,
         institution: edu.institution,

@@ -1,9 +1,10 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, DestroyRef, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { selectLanguage } from '../language.selectors';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 interface PersonalData {
   name: string;
@@ -22,6 +23,8 @@ interface PersonalData {
   styleUrls: ['./personal-data.component.css'],
 })
 export class PersonalDataComponent implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
+
   language$: Observable<string>;
   personalData: PersonalData = {
     name: '',
@@ -40,7 +43,7 @@ export class PersonalDataComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.language$.subscribe((language) => {
+    this.language$.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((language) => {
       this.translate.use(language);
       this.loadProjects();
       this.cdr.detectChanges();

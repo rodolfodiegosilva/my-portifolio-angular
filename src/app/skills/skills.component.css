@@ -1,46 +1,43 @@
 .skills-section {
-  background-color: #5d869a;
-  color: #333;
-  text-align: center;
-  padding: 50px 20px;
+  padding: 0;
   width: 100%;
 }
 
 .skills-content {
-  max-width: 95%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 .skills-content h2 {
-  color: white;
-  font-size: 2em;
-  margin-bottom: 20px;
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
 }
 .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 .skill {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 5px;
-  border-radius: 5px;
-  flex: 1 1 calc(20% - 40px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  border: 1px solid var(--border);
+  padding: 14px 14px 12px;
+  border-radius: calc(var(--radius) - 8px);
+  box-shadow: var(--shadow-sm);
   box-sizing: border-box;
+  text-align: left;
 }
 .skill h4 {
-  font-size: 1em;
-  margin-bottom: 0px;
+  font-size: 1rem;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 .skill p {
-  font-size: .8em;
-  margin-bottom: 0px;
-  color: #666;
+  font-size: 0.86rem;
+  margin: 0 0 10px;
+  color: var(--muted);
 }
 .progress-bar-container {
-  background-color: #eee;
+  background-color: color-mix(in srgb, var(--border) 45%, transparent);
   border-radius: 5px;
   overflow: hidden;
   height: 10px;
@@ -52,40 +49,30 @@
 }
 .progress-bar.Advanced {
   width: 100%;
-  background-color: #2196f3;
+  background: linear-gradient(90deg, var(--primary), color-mix(in srgb, var(--accent) 40%, var(--primary)));
 }
 .progress-bar.Intermediate {
   width: 66.66%;
-  background-color: #4caf50;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--primary) 70%, #4caf50), #4caf50);
 }
 .progress-bar.Beginner {
   width: 33.33%;
-  background-color: #ff9800;
+  background: linear-gradient(90deg, #ff9800, color-mix(in srgb, #ff9800 70%, var(--primary)));
 }
 .skill-level {
-  margin-top: 0px;
-  font-size: 0.9em;
-  color: #282626;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 @media (max-width: 768px) {
   .skills-list {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .skill {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 1px !important;
-  }
-  .skills-content {
-    max-width: 100% !important;
-  }
-  .skill h4 {
-    font-size: .9em;
-    margin-bottom: 0px;
-  }
-  .skill p {
-    font-size: .7em;
+}
+
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }
