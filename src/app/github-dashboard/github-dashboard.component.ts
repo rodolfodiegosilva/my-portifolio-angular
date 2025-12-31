@@ -1,8 +1,9 @@
 import {
   Component,
+  DestroyRef,
   OnInit,
-  ChangeDetectorRef,
   HostListener,
+  inject,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
@@ -11,6 +12,8 @@ import { Observable } from 'rxjs';
 import { selectLanguage } from '../language.selectors';
 import { GithubService } from '../services/github.service';
 import { Activity, Repository } from '../models/github.models';
+import { environment } from '../../environments/environment';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-github-dashboard',
@@ -20,29 +23,29 @@ import { Activity, Repository } from '../models/github.models';
   imports: [CommonModule, TranslateModule],
 })
 export class GithubDashboardComponent implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
+
   repositories: Repository[] = [];
   activities: Activity[] = [];
   allRepositories: Repository[] = [];
-  username: string = 'rodolfodiegosilva';
+  username: string = environment.githubUsername;
   language$: Observable<string>;
 
   constructor(
     private githubService: GithubService,
     private store: Store,
-    private translate: TranslateService,
-    private cdr: ChangeDetectorRef
+    private translate: TranslateService
   ) {
     this.language$ = this.store.select(selectLanguage);
   }
 
   ngOnInit(): void {
-    this.language$.subscribe((language) => {
-      this.translate.use(language);
-      this.getRepositories();
-      this.getActivities();
-      this.cdr.detectChanges();
-    });
+    this.language$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((language) => this.translate.use(language));
 
+    this.getRepositories();
+    this.getActivities();
     this.adjustRepositories(window.innerWidth);
   }
 
@@ -55,21 +58,12 @@ export class GithubDashboardComponent implements OnInit {
   getRepositories(): void {
     this.githubService.getUserRepos(this.username).subscribe(
       (data: Repository[]) => {
-        this.allRepositories = data
+        this.allRepositories = [...data]
           .sort(
             (a: Repository, b: Repository) =>
               new Date(b.updated_at).getTime() -
               new Date(a.updated_at).getTime()
-          )
-          .map((repo: Repository) => ({
-            name: repo.name,
-            stars: repo.stars,
-            forks: repo.forks,
-            openIssues: repo.openIssues,
-            html_url: repo.html_url,
-            description: repo.description,
-            updated_at: repo.updated_at,
-          }));
+          );
 
         this.adjustRepositories(window.innerWidth);
       },

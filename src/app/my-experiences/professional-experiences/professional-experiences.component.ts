@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, DestroyRef, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Store } from '@ngrx/store';
@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ProfessionalExperienceModalComponent } from '../experience-modal/professional-experience-modal.component';
 import { selectLanguage } from '../../language.selectors';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 declare var bootstrap: any;
 
@@ -32,6 +33,8 @@ interface Experience {
   styleUrls: ['./professional-experiences.component.css'],
 })
 export class ProfessionalExperiencesComponent implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
+
   language$: Observable<string>;
   experiences: Experience[] = [];
   selectedExperience?: any;
@@ -39,23 +42,24 @@ export class ProfessionalExperiencesComponent implements OnInit {
 
   constructor(
     private store: Store,
-    private translate: TranslateService,
-    private cdr: ChangeDetectorRef
+    private translate: TranslateService
   ) {
     this.language$ = this.store.select(selectLanguage);
   }
 
   ngOnInit() {
-    this.language$.subscribe((language) => {
-      this.translate.use(language);
-      this.loadExperiences();
-      this.cdr.detectChanges();
-    });
+    this.language$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((language) => {
+        this.translate.use(language);
+        this.loadExperiences();
+      });
   }
 
   loadExperiences() {
     this.translate
       .get('professionalExperiences.experiences')
+      .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe((res: any[]) => {
         this.experiences = res.map((experience: any) => ({
           position: experience.position,
@@ -81,11 +85,13 @@ export class ProfessionalExperiencesComponent implements OnInit {
     if (this.experienceModal) {
       this.experienceModal.hide();
     }
-    this.cdr.detectChanges();
   }
 
   downloadCV() {
-    this.translate.get('professionalExperiences.cv_link').subscribe((cvLink: string) => {
+    this.translate
+      .get('professionalExperiences.cv_link')
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((cvLink: string) => {
       window.open(cvLink, '_blank');
     });
   }

@@ -1,47 +1,28 @@
-
 # My Portfolio Angular
 
-Este é um projeto de portfólio desenvolvido em Angular. Ele exibe dados pessoais, perfil, habilidades, e projetos com integração à API do GitHub para obter dados dinâmicos.
+Este é um projeto de portfólio desenvolvido em Angular. Ele exibe dados pessoais, perfil, habilidades e projetos (incluindo um dashboard do GitHub consumindo endpoints públicos).
 
-## Estrutura do Projeto
+## Scripts
+
+- `npm start`: inicia o servidor de desenvolvimento
+- `npm run build`: build de produção
+- `npm test`: testes unitários (Karma)
+
+## Integração com GitHub (nota de segurança)
+
+Este projeto consome **endpoints públicos** da GitHub REST API direto do navegador. **Não** embuta tokens/segredos no frontend (qualquer coisa enviada pro browser é pública).
+
+## Estrutura do projeto (visão rápida)
 
 ```
 my-portfolio-angular/
-├── .angular/
 ├── src/
 │   ├── app/
-│   │   ├── personal-data/
-│   │   │   ├── personal-data.component.css
-│   │   │   ├── personal-data.component.html
-│   │   │   └── personal-data.component.ts
-│   │   ├── profile/
-│   │   │   ├── profile.component.css
-│   │   │   ├── profile.component.html
-│   │   │   └── profile.component.ts
-│   │   ├── services/
-│   │   │   └── github.service.ts
-│   │   ├── skills/
-│   │   │   ├── skills.component.css
-│   │   │   ├── skills.component.html
-│   │   │   └── skills.component.ts
-│   │   ├── toggle-button/
-│   │   │   ├── toggle-button.component.css
-│   │   │   ├── toggle-button.component.html
-│   │   │   └── toggle-button.component.ts
 │   ├── assets/
-│   │   ├── i18n/
-│   │   │   ├── en.json
-│   │   │   └── pt.json
-│   │   ├── projects/
-│   ├── environments/
-│   │   ├── environment.prod.ts
-│   │   └── environment.ts
-├── .editorconfig
-├── .gitignore
+│   │   └── i18n/
+│   └── environments/
 ├── angular.json
 ├── package.json
-├── package-lock.json
-├── README.md
 └── tsconfig.json
 ```
 
@@ -72,7 +53,7 @@ npm install
 Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
-ng serve
+npm start
 ```
 
 O aplicativo estará disponível em `http://localhost:4200/`.
@@ -82,7 +63,7 @@ O aplicativo estará disponível em `http://localhost:4200/`.
 Para construir o projeto para produção, execute:
 
 ```bash
-ng build --prod
+npm run build
 ```
 
 Os arquivos de saída estarão na pasta `dist/`.

@@ -1,6 +1,15 @@
 <nav class="nav">
   <a href="#" class="nav__logo">Rodolfo Silva</a>
   <div class="toggle-container-responsive">
+    <button
+      type="button"
+      class="nav__iconbutton"
+      (click)="toggleTheme()"
+      [attr.aria-label]="theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+      [attr.title]="theme === 'dark' ? 'Light mode' : 'Dark mode'"
+    >
+      <i class="fa" [class.fa-sun]="theme === 'dark'" [class.fa-moon]="theme !== 'dark'"></i>
+    </button>
     <app-toggle-button
       (languageChanged)="switchLanguage($event)"
     ></app-toggle-button>
@@ -40,7 +49,7 @@
             "navbar.projects" | translate
           }}</a>
         </li>
-        <li *ngIf="false" class="nav__item">
+        <li class="nav__item">
           <a (click)="scrollToSection('github-dashboard')" class="nav__link">{{
             "navbar.github_dashboard" | translate
           }}</a>
@@ -64,6 +73,15 @@
       <i class="fa fa-2x fa-times"></i>
     </a>
     <div class="toggle-container-desktop">
+      <button
+        type="button"
+        class="nav__iconbutton"
+        (click)="toggleTheme()"
+        [attr.aria-label]="theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+        [attr.title]="theme === 'dark' ? 'Light mode' : 'Dark mode'"
+      >
+        <i class="fa" [class.fa-sun]="theme === 'dark'" [class.fa-moon]="theme !== 'dark'"></i>
+      </button>
       <app-toggle-button
         (languageChanged)="switchLanguage($event)"
       ></app-toggle-button>

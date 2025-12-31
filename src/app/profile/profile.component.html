@@ -1,6 +1,17 @@
 <div class="profile-section full-width">
   <div class="profile-content">
-    <h3>{{ "profile.about_title" | translate }}</h3>
-    <p>{{ "profile.about_description" | translate }}</p>
+    <div class="profile-grid">
+      <div>
+        <h3 class="profile-title">{{ "profile.about_title" | translate }}</h3>
+        <p class="profile-text">{{ "profile.about_description" | translate }}</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card__label">{{ "profile.stats.now" | translate }}</div>
+        <div class="profile-card__value">{{ "personal_data.profession" | translate }}</div>
+        <div class="profile-card__divider"></div>
+        <div class="profile-card__label">{{ "profile.stats.focus" | translate }}</div>
+        <div class="profile-card__value">{{ "profile.stats.focus_value" | translate }}</div>
+      </div>
+    </div>
   </div>
 </div>

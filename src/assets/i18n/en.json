@@ -16,7 +16,12 @@
   },
   "profile": {
     "about_title": "Hi, I'm Rodolfo Silva. Thank you for visiting my site.",
-    "about_description": "Experienced Web Developer adept in all stages of web development. Knowledgeable in user interface, testing, and maintenance of web systems. Equipped with a diverse and promising skill set. Proficient in various technologies, including Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB, and MySQL. Capable of effectively self-managing during independent projects and collaborating in a team."
+    "about_description": "Experienced Web Developer adept in all stages of web development. Knowledgeable in user interface, testing, and maintenance of web systems. Equipped with a diverse and promising skill set. Proficient in various technologies, including Java, SpringBoot, JavaScript, TypeScript, Angular, React, MongoDB, and MySQL. Capable of effectively self-managing during independent projects and collaborating in a team.",
+    "stats": {
+      "now": "Now",
+      "focus": "Focus",
+      "focus_value": "Clean UI • Scalable APIs • Cloud"
+    }
   },
   "skills": {
     "title": "Skills",

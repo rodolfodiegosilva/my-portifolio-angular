@@ -1,12 +1,52 @@
 <div class="personal-data-section full-width">
   <div class="personal-data-content">
-    <img
-      [src]="personalData.imgProfile"
-      alt="{{ personalData.imgProfile }}"
-      class="personal-photo"
-    />
-    <h1>{{ personalData.name | translate }}</h1>
-    <h2>{{ personalData.profession | translate }}</h2>
-    <p>{{ personalData.description | translate }}</p>
+    <div class="hero">
+      <div class="hero__left">
+        <div class="hero__kicker">Software Engineer • Full-stack</div>
+        <h1 class="hero__title">{{ personalData.name | translate }}</h1>
+        <p class="hero__subtitle">{{ personalData.profession | translate }}</p>
+        <p class="hero__description">{{ personalData.description | translate }}</p>
+
+        <div class="hero__cta">
+          <a
+            class="btn btn-primary"
+            href="{{ 'professionalExperiences.cv_link' | translate }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-download"></i>
+            {{ 'professionalExperiences.download_cv' | translate }}
+          </a>
+
+          <a
+            class="btn btn-outline-primary"
+            href="{{ 'footer.github_link' | translate }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+
+          <a
+            class="btn btn-outline-primary"
+            href="{{ 'footer.linkedin_link' | translate }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <img
+          [src]="personalData.imgProfile"
+          alt="Profile photo"
+          class="personal-photo"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
   </div>
 </div>

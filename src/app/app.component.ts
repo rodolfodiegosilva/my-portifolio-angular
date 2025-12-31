@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, DestroyRef, OnInit, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -18,6 +18,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ProjectDetailsComponent } from './my-projects/project-details/project-details.component';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -41,30 +43,36 @@ import { ProjectDetailsComponent } from './my-projects/project-details/project-d
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
+
   language$: Observable<string>;
   isProjectDetailsPage: boolean = false;
 
   constructor(
     private store: Store,
     private translate: TranslateService,
-    private cdr: ChangeDetectorRef,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private themeService: ThemeService
   ) {
     this.language$ = this.store.select(selectLanguage);
   }
 
   ngOnInit() {
-    this.language$.subscribe((language) => {
-      this.translate.use(language);
-      this.cdr.detectChanges(); // Forçar detecção de mudanças
-    });
+    // Apply theme early (persisted or OS preference)
+    this.themeService.setTheme(this.themeService.getTheme());
+
+    this.language$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((language) => this.translate.use(language));
 
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
+      .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe(() => {
-        this.isProjectDetailsPage = this.activatedRoute.firstChild?.snapshot.routeConfig?.path === 'project/:name';
-        this.cdr.detectChanges(); // Forçar detecção de mudanças
+        this.isProjectDetailsPage =
+          this.activatedRoute.firstChild?.snapshot.routeConfig?.path ===
+          'project/:name';
       });
   }
 
