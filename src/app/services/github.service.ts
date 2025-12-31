@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
-import { Activity, Repository } from '../models/github.models';
+import { map } from 'rxjs/operators';
+import {
+  Activity,
+  GitHubEventResponse,
+  GitHubRepoResponse,
+  Repository,
+} from '../models/github.models';
 
 @Injectable({
   providedIn: 'root'
@@ -10,26 +15,47 @@ import { Activity, Repository } from '../models/github.models';
 export class GithubService {
 
   private readonly GITHUB_API_URL = 'https://api.github.com';
-  private readonly GITHUB_TOKEN = environment.GITHUB_TOKEN;
 
   constructor(private http: HttpClient) { }
 
   getUserRepos(username: string): Observable<Repository[]> {
-    const headers = new HttpHeaders().set(
-      'Authorization',
-      `token ${this.GITHUB_TOKEN}`
-    );
-  
     const url = `${this.GITHUB_API_URL}/users/${username}/repos`;
-    return this.http.get<Repository[]>(url, { headers });
+    const headers = new HttpHeaders({
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    });
+
+    return this.http.get<GitHubRepoResponse[]>(url, { headers }).pipe(
+      map((repos) =>
+        repos.map((repo) => ({
+          name: repo.name,
+          stars: repo.stargazers_count,
+          forks: repo.forks_count,
+          openIssues: repo.open_issues_count,
+          html_url: repo.html_url,
+          description: repo.description,
+          updated_at: repo.updated_at,
+        }))
+      )
+    );
   }
 
   getUserActivities(username: string): Observable<Activity[]> {
-    const headers = new HttpHeaders().set(
-      'Authorization',
-      `token ${this.GITHUB_TOKEN}`
-    );
     const url = `${this.GITHUB_API_URL}/users/${username}/events`;
-    return this.http.get<Activity[]>(url, { headers });
+    const headers = new HttpHeaders({
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    });
+
+    return this.http.get<GitHubEventResponse[]>(url, { headers }).pipe(
+      map((events) =>
+        events.map((event) => ({
+          type: event.type,
+          repo: event.repo,
+          payload: event.payload,
+          created_at: event.created_at,
+        }))
+      )
+    );
   }
 }
